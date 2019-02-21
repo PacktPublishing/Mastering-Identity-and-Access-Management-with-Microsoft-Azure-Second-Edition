@@ -1,0 +1,9 @@
+# Get the certificate thumbprint
+gci Cert:\LocalMachine\My\ | fl
+# Install Web Application Proxy
+Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
+# Configure Web Application Proxy
+$creds = Get-Credential
+Install-WebApplicationProxy -FederationServiceName "login.inovitdemos.ch" -FederationServiceTrustCredential $creds -CertificateThumbprint "66F1BF8CCD904DF74154A5D24769DE155E874257"
+# Server restart
+Restart-Computer

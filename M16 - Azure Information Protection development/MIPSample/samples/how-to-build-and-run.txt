@@ -1,0 +1,68 @@
+Instructions for Windows:
+=========================
+
+To build the the sample apps:
+-----------------------------
+1. Install Python
+	a. Download and install Python 2.7
+	b. Update PATH environment variable to include Python and Python Scripts folders (e.g. 'C:\Python27;C:\Python27\Scripts')
+2. Download and install SCons 3.0.1+ (bitness should match that of Python)
+3. Install Visual Studio Build Tools
+	a. Download "Visual C++ 2017 Build Tools"
+	b. In the installation window, under "Workloads" select "Visual C++ build tools"
+	c. In the installation window, under "Individual components" select: 
+		- Windows 10 SDK (10586)
+		- VC++ 2015.3 v140 toolset for desktop
+	d. Install the selected components
+4. Open a command line in the "samples" directory of the package and run "scons --help"
+5. Follow the instructions
+
+To run the samples:
+---------------------------
+1. Install Python (required for auth token acquisition)
+2. Run file_sample.exe or protection_sample.exe (from root package or bins folder)
+
+Instructions for Ubuntu / Debian:
+=================================
+
+To build the sample apps:
+-------------------------
+1. Run the following commands:
+	a. sudo apt-get update 
+	b. sudo apt-get install scons libgsf-1-dev libssl-dev libsecret-1-dev freeglut3-dev libcpprest-dev libcurl3-dev
+2. Open a terminal in the "samples" directory of the package 
+3. Run "scons --help"
+4. Follow the instructions
+ 
+To run the samples:
+-----------------------
+1. Run ./file_sample or ./protection_sample (from bins folder)
+
+Instructions for CentOS 7 / RHEL 7:
+===================================
+To build the sample apps:
+-------------------------
+1. Run the following commands:
+	a. sudo yum upgrade
+	in CentOS:
+	b.
+		sudo yum install epel-release
+	in RHEL:
+	b.
+		1. Enable EPEL-release repo as stated here: https://fedoraproject.org/wiki/EPEL#How_can_I_use_these_extra_packages.3F
+	
+	c. scl enable devtoolset-7 bash
+	d. sudo yum install openssl-devel libxml2-devel libcurl-devel gdk-pixbuf2 glib2-devel python2-scons devtoolset-7
+	e. Install newer libGSF:
+		1. wget https://rpmfind.net/linux/fedora/linux/development/rawhide/Everything/x86_64/os/Packages/l/libgsf-1.14.43-2.fc29.x86_64.rpm
+		2. sudo rpm -Uvh libgsf-1.14.43-2.fc29.x86_64.rpm
+	f. Build ans install newer Boost:
+		1. wget -nv -q https://dl.bintray.com/boostorg/release/1.67.0/source/boost_1_67_0.tar.gz
+		2. tar -xzf boost_1_67_0.tar.gz
+		3. cd boost_1_67_0
+		4. ./bootstrap.sh --prefix=/usr --libdir=/usr/lib64  --with-libraries=chrono,random,system,thread,filesystem,atomic,date_time,regex
+		5. sudo ./b2 install --prefix=/usr --libdir=/usr/lib64 -j$(nproc)
+		6. cd ..
+2. Open a terminal in the "samples" directory of the package 
+3. Run "scons --help"
+4. Follow the instructions

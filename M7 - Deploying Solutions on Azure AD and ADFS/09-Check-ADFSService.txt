@@ -1,0 +1,5 @@
+# Check ADFS Metadata
+https://login.inovitdemos.ch/adfs/fs/federationserverservice.asmx
+# Check IDP Sign In
+# Add "login.inovitdemos.ch" to the "Local Intranet" settings in IE
+https://login.inovitdemos.ch/adfs/ls/IdpInitiatedSignon.aspx

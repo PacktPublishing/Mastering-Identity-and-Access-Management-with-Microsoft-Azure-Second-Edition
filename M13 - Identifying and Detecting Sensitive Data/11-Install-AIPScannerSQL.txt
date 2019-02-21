@@ -1,0 +1,2 @@
+$cred = Get-Credential
+Install-AIPScanner -SqlServerInstance INODEMOSAPP01 -ServiceUserCredentials $cred

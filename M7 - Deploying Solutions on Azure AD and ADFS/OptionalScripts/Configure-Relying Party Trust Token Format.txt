@@ -1,0 +1,5 @@
+Set-ADFSRelyingPartyTrust -TargetIdentifier "https://windows-server-workfolders/V1" -EnableJWT $true
+Set-ADFSRelyingPartyTrust -TargetIdentifier "https://windows-server-workfolders/V1" -Encryptclaims $false
+Set-ADFSRelyingPartyTrust -TargetIdentifier "https://windows-server-workfolders/V1" -AutoupdateEnabled $true
+Set-ADFSRelyingPartyTrust -TargetIdentifier "https://windows-server-workfolders/V1" -IssueOAuthRefreshTokensToAllDevices
+Set-AdfsProperties -WIASupportedUserAgents ((GetAdfsProperties).WIASupportedUserAgents + 'MS_WorkFoldersClient')

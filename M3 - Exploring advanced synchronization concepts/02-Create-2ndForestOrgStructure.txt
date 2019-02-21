@@ -1,0 +1,7 @@
+New-ADOrganizationalUnit -Name "Managed Business Objects" -Path "DC=AZUREID,DC=CH"
+New-ADOrganizationalUnit -Name "Users" -Path "OU=Managed Business Objects,DC=AZUREID,DC=CH"
+New-ADOrganizationalUnit -Name "Groups" -Path "OU=Managed Business Objects,DC=AZUREID,DC=CH"
+New-ADOrganizationalUnit -Name "Devices" -Path "OU=Managed Business Objects,DC=AZUREID,DC=CH"
+New-ADOrganizationalUnit -Name "Managed Service Objects" -Path "DC=AZUREID,DC=CH"
+New-ADOrganizationalUnit -Name "AAD" -Path "OU=Managed Service Objects,DC=AZUREID,DC=CH"
+New-ADOrganizationalUnit -Name "Users" -Path "OU=AAD,OU=Managed Service Objects,DC=AZUREID,DC=CH"

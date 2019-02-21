@@ -1,0 +1,4 @@
+# Label ID of Confidential / All Employees gathered on the Azure Information Protection blade
+$labelid = "6eae6a7b-f321-4fc4-8049-1ef7cc9575b2"
+$label = "MSIP_Label_"+$labelid+"_enabled=true"
+New-TransportRule -name "Protect External User Access" -SentToScope notinorganization -HeaderContainsMessageHeader "msip_labels" -HeaderContainsWord $label -RejectMessageReasonText "Internal Protected Message"

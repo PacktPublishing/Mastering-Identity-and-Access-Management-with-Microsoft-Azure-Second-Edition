@@ -1,0 +1,2 @@
+# Replace the tenant ID to your value
+$certbase64 = New-AdfsAzureMfaTenantCertificate -TenantID 181031inovitdemos.onmicrosoft.com

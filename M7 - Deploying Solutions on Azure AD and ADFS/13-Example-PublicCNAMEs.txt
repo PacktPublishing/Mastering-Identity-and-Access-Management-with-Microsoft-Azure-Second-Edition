@@ -1,0 +1,5 @@
+login.inovitdemos.ch. CNAME 15 MIN inodemosura01.westeurope.cloudapp.azure.com
+basic.inovitdemos.ch. CNAME 15 MIN inodemosura01.westeurope.cloudapp.azure.com
+kerb.inovitdemos.ch. CNAME 15 MIN inodemosura01.westeurope.cloudapp.azure.com
+ntlm.inovitdemos.ch. CNAME 15 MIN inodemosura01.westeurope.cloudapp.azure.com
+claims.inovitdemos.ch. CNAME 15 MIN inodemosura01.westeurope.cloudapp.azure.com

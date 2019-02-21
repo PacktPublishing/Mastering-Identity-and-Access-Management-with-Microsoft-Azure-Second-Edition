@@ -1,0 +1,2 @@
+Connect-MsolService
+Convert-MsolDomainToFederated -DomainName inovitdemos.ch -SupportMultipleDomain:$true

@@ -1,0 +1,2 @@
+# Create CNAME in Public DNS for login.inovitdemos.ch
+login.inovitdemos.ch.	CNAME	15 MIN	inodemosura01.westeurope.cloudapp.azure.com

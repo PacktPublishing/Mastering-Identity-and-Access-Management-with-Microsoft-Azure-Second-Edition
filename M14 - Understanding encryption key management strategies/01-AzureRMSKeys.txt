@@ -1,0 +1,8 @@
+# Installing the AADRM module to administer Azure RMS
+Install-Module -Name AADRM
+# Connecting to Azure RMS with global administrator rights
+Connect-AadrmService
+# Listing the Azure RMS keys
+Get-AadrmKeys
+
+Get-AadrmConfiguration

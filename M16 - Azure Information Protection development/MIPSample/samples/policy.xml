@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SyncFile>
+  <TenantId>0e09caf1-b209-4474-84c0-df143831df4b</TenantId>
+  <Type>MipPolicies</Type>
+  <Timestamp>2017-11-27T06:09:14.4340731Z</Timestamp>
+  <FileId>57741C5E719004D6234815CC239DEBFE341EF0FAEFD9A527B3EC7D5664BE34CE72F988BF86F141AF91AB2D7CD011DB47</FileId>
+  <Content>
+    <Upn>stub_user@contoso.com</Upn>
+    <labels>
+      <settings>
+        <setting key="requireDowngradeJustification" value="true" />
+        <setting key="defaultLabelId" value="d77edb09-ae2f-48b0-a7cb-77e50345830b" />
+      </settings>
+      <displayName locale="en-US">Sensitivity</displayName>
+      <description locale="en-US">Data Sensitivity labels describe the level of risk and exposure to users inside and outside the company to this information</description>
+      <label id="3df71041-85be-479d-b153-8acaec1fe5c7" name="NonBusiness">
+        <displayName locale="en-US">Non-Business</displayName>
+        <description locale="en-US">Non-Business data which does not belong to Contoso. Data is not encrypted and cannot be tracked or revoked. Do not use Non-Business to classify any personal data which is collected by or which belongs to Contoso. Such content should be marked as either Confidential or Highly Confidential.</description>
+        <settings>
+          <setting key="order" value="0" />
+          <setting key="color" value="#737373" />
+          <setting key="viewOnly" value="false" />
+        </settings>
+      </label>
+      <label id="69439d00-5cc7-44d2-ab0b-96af4bb0e7e9" name="Public">
+        <displayName locale="en-US">Public</displayName>
+        <description locale="en-US">Business data specifically prepared and approved for public consumption. Data is not encrypted, and cannot be tracked or revoked.</description>
+        <settings>
+          <setting key="order" value="0" />
+          <setting key="color" value="#317100" />
+          <setting key="viewOnly" value="false" />
+        </settings>
+      </label>
+      <label id="d77edb09-ae2f-48b0-a7cb-77e50345830b" name="General">
+        <displayName locale="en-US">Gênêral</displayName>
+        <description locale="en-US">Business data which is NOT meant for public consumption. However, this can be shared with internal employees, business guests and external partners as needed. Data is not encrypted, and cannot be tracked or revoked.</description>
+        <settings>
+          <setting key="order" value="0" />
+          <setting key="color" value="#0078D7" />
+          <setting key="viewOnly" value="false" />
+        </settings>
+      </label>
+      <label id="4e7f8f6f-d25d-4980-9ca7-e5944eee5d66" name="Confidential">
+        <displayName locale="en-US">Confidential</displayName>
+        <description locale="en-US">Sensitive business data which could cause business harm if over-shared. Recipients are trusted and get full delegation rights. Data is encrypted. Data owners can track and revoke content.</description>
+        <settings>
+          <setting key="order" value="0" />
+          <setting key="color" value="#FF8C00" />
+          <setting key="viewOnly" value="false" />
+        </settings>
+        <labels>
+          <label id="c8deb7ae-676d-41d3-b0b3-51ee9c4d9b7b" name="RecipientsOnly">
+            <displayName locale="en-US">Recipients Only</displayName>
+            <description locale="en-US">Data is classified and protected. Recipients can view but cannot forward, print or copy the content.</description>
+            <settings>
+              <setting key="order" value="0" />
+              <setting key="viewOnly" value="false" />
+            </settings>
+          </label>
+          <label id="0d23bc70-d65e-429c-99d4-a2176d198741" name="ContosoExecAndStaff">
+            <displayName locale="en-US">Contoso Executives and Staff</displayName>
+            <description locale="en-US">Data is classified &amp; protected. Contoso Executive Staff can edit, forward, reply, print and unprotect. Direct reports can only edit and reply.</description>
+            <settings>
+              <setting key="order" value="0" />
+              <setting key="viewOnly" value="true" />
+            </settings>
+          </label>
+          <label id="92f22244-d443-4948-97e3-5da0a09ae0bb" name="ContosoFTE">
+            <displayName locale="en-US">Contoso FTE</displayName>
+            <description locale="en-US">Data is classified and protected. Contoso Full Time Employees (FTE) can edit, reply, forward and print. Recipient can unprotect content with proper justification.</description>
+            <settings>
+              <setting key="order" value="0" />
+              <setting key="viewOnly" value="false" />
+            </settings>
+          </label>
+          <label id="bd621434-11b6-4854-84a0-5e9df216fb7c" name="ContosoExtended">
+            <displayName locale="en-US">Contoso Extended</displayName>
+            <description locale="en-US">Data is classified and protected. Contoso Full Time Employees (FTE) and non-employees can edit, reply, forward and print. Recipient can unprotect content with the right justification.</description>
+            <settings>
+              <setting key="order" value="0" />
+              <setting key="viewOnly" value="false" />
+            </settings>
+          </label>
+        </labels>
+      </label>
+      <label id="98c836a2-1532-4e89-877b-7dc674798756" name="HighlyConfidential">
+        <displayName locale="en-US">Highly Confidential</displayName>
+        <description locale="en-US">Very sensitive business data which would certainly cause business harm if over-shared. Recipients do NOT get delegation rights. Data is encrypted and rights are enforced. Data owners can track and revoke content.</description>
+        <settings>
+          <setting key="order" value="0" />
+          <setting key="color" value="#A80000" />
+          <setting key="viewOnly" value="false" />
+        </settings>
+        <labels>
+          <label id="21674434-b332-4647-948b-7882b4a55807" name="HighlyConfidentialRecipientsOnly">
+            <displayName locale="en-US">Recipients Only</displayName>
+            <description locale="en-US">Data is classified and protected. Recipients have view, edit and reply.</description>
+            <settings>
+              <setting key="order" value="0" />
+              <setting key="viewOnly" value="false" />
+            </settings>
+          </label>
+          <label id="8ef3c83a-d6c2-4a49-aa37-ae5ef3739ce6" name="HighlyConfidentialContosoExecAndStaff">
+            <displayName locale="en-US">Contoso Executives and Staff</displayName>
+            <description locale="en-US">Data is classified and protected. Contoso Executive Staff and Directs can view, edit, and reply.</description>
+            <settings>
+              <setting key="order" value="0" />
+              <setting key="viewOnly" value="false" />
+            </settings>
+          </label>
+          <label id="5fb6eaa5-56a9-4aeb-8719-f45f81471183" name="HighlyConfidentialContosoFTE">
+            <displayName locale="en-US">Contoso FTE</displayName>
+            <description locale="en-US">Data is classified and protected. Contoso Full Time Employees (FTE) can view, edit and reply.</description>
+            <settings>
+              <setting key="order" value="0" />
+              <setting key="viewOnly" value="false" />
+            </settings>
+          </label>
+          <label id="d83c8aa3-afac-4478-9759-46608805e2bd" name="HighlyConfidentialContosoExtended">
+            <displayName locale="en-US">Contoso Extended</displayName>
+            <description locale="en-US">Data is classified and protected. Contoso Full Time Employees (FTE) and non employees can view, edit and reply.</description>
+            <settings>
+              <setting key="order" value="0" />
+              <setting key="viewOnly" value="false" />
+            </settings>
+          </label>
+        </labels>
+      </label>
+    </labels>
+    <policies>
+      <policy id="63d78cc9-f200-4013-908d-6477d259ef2d" mode="Enforce">
+        <rules>
+          <rule name="PublicNoProtection" id="0ae172b8-48cc-4a99-9a5c-b08d0be519a9">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="69439d00-5cc7-44d2-ab0b-96af4bb0e7e9" />
+                  <keyValue key="LabelName" value="Public" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="RemoveProtection" />
+          </rule>
+          <rule name="ConfidentialApplyFooter" id="f81ff6cf-7017-4f02-823c-ad38a5d6480f">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="6a975473-dc1b-46bb-9a1e-02615c031853" />
+                  <keyValue key="LabelName" value="Confidential" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="ApplyContentMarking">
+              <argument key="Text" value="Classified as Contoso Confidential" />
+              <argument key="FontSize" value="10" />
+              <argument key="FontColor" value="#000000" />
+              <argument key="Alignment" value="Left" />
+              <argument key="Placement" value="Footer" />
+              <argument key="Margin" value="5" />
+            </action>
+          </rule>
+          <rule name="ConfidentialRecipientsOnlyDoNotForward" id="c8deb7ae-676d-41d3-b0b3-51ee9c4d9b7b">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="efa09235-0b14-481d-a77a-fdb7e47ab451" />
+                  <keyValue key="LabelName" value="RecipientsOnly" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="RightsProtectMessage">
+              <argument key="ProtectionType" value="DoNotForward" />
+            </action>
+          </rule>
+          <rule name="ConfidentialRecipientsOnlyApplyFooter" id="76a4a9d6-f512-4344-b94d-8d3a8ff365f8">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="efa09235-0b14-481d-a77a-fdb7e47ab451" />
+                  <keyValue key="LabelName" value="RecipientsOnly" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="ApplyContentMarking">
+              <argument key="Text" value="Confidential - Recipients Only" />
+              <argument key="FontSize" value="10" />
+              <argument key="FontColor" value="#000000" />
+              <argument key="Alignment" value="Left" />
+              <argument key="Placement" value="Footer" />
+              <argument key="Margin" value="5" />
+            </action>
+          </rule>
+          <rule name="ConfidentialContosoExecAndStaffTemplate" id="d4329ff9-3dac-4ebf-8f15-d8f6bfb12a2d">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="0d23bc70-d65e-429c-99d4-a2176d198741" />
+                  <keyValue key="LabelName" value="ContosoExecAndStaff" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="RightsProtectMessage">
+              <argument key="ProtectionType" value="Template" />
+              <argument key="TemplateId" value="a677f48d-f4e8-41da-8c8c-296db54d7f43" />
+            </action>
+          </rule>
+          <rule name="ConfidentialContosoExecAndStaffApplyFooter" id="f9075076-f7e5-4a15-bb07-8f4e8f311c8f">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="0d23bc70-d65e-429c-99d4-a2176d198741" />
+                  <keyValue key="LabelName" value="ContosoExecAndStaff" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="ApplyContentMarking">
+              <argument key="Text" value="Confidential - Contoso Executives and Staff" />
+              <argument key="FontSize" value="10" />
+              <argument key="FontColor" value="#000000" />
+              <argument key="Alignment" value="Right" />
+              <argument key="Placement" value="Footer" />
+              <argument key="Margin" value="5" />
+            </action>
+          </rule>
+          <rule name="ConfidentialContosoFTETemplate" id="056ecd83-aabb-4e20-b440-782c7a429153">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="7de135f8-ae65-4421-b996-b9c2b8aae5a7" />
+                  <keyValue key="LabelName" value="ContosoFTE" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="RightsProtectMessage">
+              <argument key="ProtectionType" value="Template" />
+              <argument key="TemplateId" value="ee71da51-a031-4697-8abd-0acb181b2c25" />
+            </action>
+          </rule>
+          <rule name="ConfidentialContosoFTEApplyHeader" id="c4e951c8-f29a-41dc-8c89-20ba4e4a84a0">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="7de135f8-ae65-4421-b996-b9c2b8aae5a7" />
+                  <keyValue key="LabelName" value="ContosoFTE" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="ApplyContentMarking">
+              <argument key="Text" value="Confidential - Contoso FTE" />
+              <argument key="FontSize" value="10" />
+              <argument key="FontColor" value="#000000" />
+              <argument key="Alignment" value="Center" />
+              <argument key="Placement" value="Header" />
+              <argument key="Margin" value="5" />
+            </action>
+          </rule>
+          <rule name="ConfidentialContosoExtendedTemplate" id="b9767344-d558-4614-9139-4cf1c040033e">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="bd621434-11b6-4854-84a0-5e9df216fb7c" />
+                  <keyValue key="LabelName" value="ContosoExtended" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="RightsProtectMessage">
+              <argument key="ProtectionType" value="Template" />
+              <argument key="TemplateId" value="719af917-bd78-4ca4-9aa6-2950790a0d42" />
+            </action>
+          </rule>
+          <rule name="ConfidentialContosoExtendedApplyFooter" id="ef37c228-3fd7-4cb6-88ea-07712207f0f4">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="bd621434-11b6-4854-84a0-5e9df216fb7c" />
+                  <keyValue key="LabelName" value="ContosoExtended" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="ApplyContentMarking">
+              <argument key="Text" value="Confidential - Contoso Extended" />
+              <argument key="FontSize" value="10" />
+              <argument key="FontColor" value="#000000" />
+              <argument key="Alignment" value="Center" />
+              <argument key="Placement" value="Footer" />
+              <argument key="Margin" value="5" />
+            </action>
+          </rule>
+          <rule name="HighlyConfidentialapplyWatermark" id="6edcab1b-5bd9-45c7-a628-58cbae677a2c">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="98c836a2-1532-4e89-877b-7dc674798756" />
+                  <keyValue key="LabelName" value="HighlyConfidential" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="ApplyWatermarking">
+              <argument key="Text" value="Secret" />
+              <argument key="FontSize" value="50" />
+              <argument key="FontColor" value="#0000FF" />
+              <argument key="Layout" value="Horizontal" />
+            </action>
+          </rule>
+          <rule name="HighlyConfidentialRecipientsOnlyDoNotForward" id="b55547f8-deb0-4aaa-88c9-de21252d581e">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="21674434-b332-4647-948b-7882b4a55807" />
+                  <keyValue key="LabelName" value="HighlyConfidentialRecipientsOnly" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="RightsProtectMessage">
+              <argument key="ProtectionType" value="DoNotForward" />
+            </action>
+          </rule>
+          <rule name="HighlyConfidentialExecAndStaffApplyWatermark" id="3a5fddbf-8c76-485f-9785-0c2b8a590d8f">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="21674434-b332-4647-948b-7882b4a55807" />
+                  <keyValue key="LabelName" value="HighlyConfidentialRecipientsOnly" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="ApplyWatermarking">
+              <argument key="Text" value="Highly Confidential - Recipients Only" />
+              <argument key="FontSize" value="10" />
+              <argument key="FontColor" value="#0000001" />
+              <argument key="Layout" value="Horizontal" />
+            </action>
+          </rule>
+          <rule name="HighlyConfidentialExecAndStaffTemplate" id="07990ac5-a23f-4959-bfdf-01972a4e5b6b">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="21674434-b332-4647-948b-7882b4a55807" />
+                  <keyValue key="LabelName" value="HighlyConfidentialContosoExecAndStaff" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="RightsProtectMessage">
+              <argument key="ProtectionType" value="Template" />
+              <argument key="TemplateId" value="ece9515c-9be5-4ce1-a8bc-9b5fcfd57fb3" />
+            </action>
+          </rule>
+          <rule name="HighlyConfidentialExecAndStaffApplyWatermark" id="1dbbba09-241d-42cd-9308-302b194b6c17">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="21674434-b332-4647-948b-7882b4a55807" />
+                  <keyValue key="LabelName" value="HighlyConfidentialContosoExecAndStaff" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="ApplyWatermarking">
+              <argument key="Text" value="Highly Confidential - Contoso Executives and Staff" />
+              <argument key="FontSize" value="10" />
+              <argument key="FontColor" value="#0000002" />
+              <argument key="Layout" value="Horizontal" />
+            </action>
+          </rule>
+          <rule name="HighlyConfidentialContosoFTETemplate" id="5eb9ac3d-c3e2-415d-8cda-9fe7ff1512e1">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="5fb6eaa5-56a9-4aeb-8719-f45f81471183" />
+                  <keyValue key="LabelName" value="HighlyConfidentialContosoFTE" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="RightsProtectMessage">
+              <argument key="ProtectionType" value="Template" />
+              <argument key="TemplateId" value="1b1d52fe-37e3-4097-91f6-cb6f3c733f1d" />
+            </action>
+          </rule>
+          <rule name="HighlyConfidentialContosoFTEApplyWatermark" id="340b873e-e20d-423c-8adf-7a51cb6e1849">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="5fb6eaa5-56a9-4aeb-8719-f45f81471183" />
+                  <keyValue key="LabelName" value="HighlyConfidentialContosoFTE" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="ApplyWatermarking">
+              <argument key="Text" value="Highly Confidential - Contoso FTE" />
+              <argument key="FontSize" value="10" />
+              <argument key="FontColor" value="#0000003" />
+              <argument key="Layout" value="Diagonal" />
+            </action>
+          </rule>
+          <rule name="HighlyConfidentialContosoExtendedTemplate" id="74c1c7d8-ada3-4333-91f2-9e4d874193a7">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="d83c8aa3-afac-4478-9759-46608805e2bd" />
+                  <keyValue key="LabelName" value="HighlyConfidentialContosoFTE" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="RightsProtectMessage">
+              <argument key="ProtectionType" value="Template" />
+              <argument key="TemplateId" value="4102e145-19f6-4d75-a84d-ae6019782073" />
+            </action>
+          </rule>
+          <rule name="HighlyConfidentialContosoExtendedApplyWatermark" id="260c22bd-ff02-4896-9651-891719b2d9c6">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="d83c8aa3-afac-4478-9759-46608805e2bd" />
+                  <keyValue key="LabelName" value="HighlyConfidentialContosoFTE" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="ApplyWatermarking">
+              <argument key="Text" value="Highly Confidential - Contoso Extended" />
+              <argument key="FontSize" value="10" />
+              <argument key="FontColor" value="#0000004" />
+              <argument key="Layout" value="Diagonal" />
+            </action>
+          </rule>
+          <rule name="HighlyConfidentialContosoExtended" id="f385d99b-8343-4008-9b33-ee0b8fce1e4f">
+            <condition>
+              <containsClassification property="Item.ClassificationDiscovered">
+                <keyValues>
+                  <keyValue key="Label" value="bc2c4c4e-8164-4fc0-b539-1a3d123ad102" />
+                  <keyValue key="LabelName" value="HighlyConfidentialContosoExtended" />
+                </keyValues>
+              </containsClassification>
+            </condition>
+            <action name="RightsProtectMessage">
+              <argument key="ProtectionType" value="Template" />
+              <argument key="TemplateId" value="4763f3ab-22f7-4964-9ed7-4957da5caaba" />
+            </action>
+          </rule>
+        </rules>
+      </policy>
+    </policies>
+    <Upn>user@contoso.com</Upn>
+  </Content>
+</SyncFile>

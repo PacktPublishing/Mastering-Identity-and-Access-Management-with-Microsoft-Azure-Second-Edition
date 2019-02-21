@@ -1,0 +1,8 @@
+Connect-MsolService
+# Provide your global administrator credentials
+
+# View your assigned subscriptions
+Get-MsolAccountSku
+
+# View all actual users
+Get-MsolUser

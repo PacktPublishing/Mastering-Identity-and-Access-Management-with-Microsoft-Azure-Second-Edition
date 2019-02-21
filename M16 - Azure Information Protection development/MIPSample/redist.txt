@@ -1,0 +1,44 @@
+Subject to the License Terms for the Software, you may copy and distribute the following files, unmodified, with your Program
+
+Windows (32 and 64 bit)
+[Development Folder]\include
+        libbz2-1.dll
+        libffi-6.dll
+        libgio-2.0-0.dll
+        libglib-2.0-0.dll
+        libgmodule-2.0-0.dll
+        libgobject-2.0-0.dll
+        libgsf-1-114.dll
+        libiconv-2.dll
+        libintl-8.dll
+        liblzma-5.dll
+        libpcre-1.dll
+        libwinpthread-1.dll
+        libxml2-2.dll
+        mip_ClientTelemetry.dll
+        mip_common.dll
+        mip_file_sdk.dll
+        mip_file_sdk.exp
+        mip_file_sdk.lib
+        mip_protection_sdk.dll
+        mip_protection_sdk.exp
+        mip_protection_sdk.lib
+        mip_upe_sdk.dll
+        mip_upe_sdk.exp
+        mip_upe_sdk.lib
+        zlib1.dll
+
+macOS
+[Development Folder]/include
+        AriaOsXObjC.framework
+        libmip_common.dylib
+        libmip_file_sdk.dylib
+        libmip_protection_sdk.dylib
+        libmip_upe_sdk.dylib
+
+Linux (RedHat, Ubuntu, and Debian)
+[Development Folder]/include
+        libmip_common.so
+        libmip_file_sdk.so
+        libmip_protection_sdk.so
+        libmip_upe_sdk.so

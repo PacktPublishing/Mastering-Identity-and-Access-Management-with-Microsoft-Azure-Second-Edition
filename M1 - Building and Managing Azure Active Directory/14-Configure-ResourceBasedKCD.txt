@@ -1,0 +1,4 @@
+# inovitcloudlabs represents the computer name
+$ConnectorComputerAccount = Get-ADComputer -Identity inovitcloudlabs
+Set-ADComputer inovitcloudlabs -PrincipalsAllowedToDelegateToAccount $ConnectorComputerAccount
+setspn -S HTTP/kerb.inovitlabs.ch inovitlabs\inovitcloudlabs

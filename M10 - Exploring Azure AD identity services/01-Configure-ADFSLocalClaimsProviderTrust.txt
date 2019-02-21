@@ -1,0 +1,83 @@
+# Set Credentials for the Service Account 
+$credential = Get-Credential 
+ 
+# Change the HostName to your domain controller and use Port 636 if configured for a secure connection 
+ 
+# Example: $vendorDirectory = New-AdfsLdapServerConnection -HostName leanads01.leano.ch -Port 636 -SslMode None -AuthenticationMethod basic -Credential $credential 
+ 
+$vendorDirectory = New-AdfsLdapServerConnection -HostName yourhostname-Port 636 -SslMode None -AuthenticationMethod basic -Credential $credential 
+ 
+$Name = New-AdfsLdapAttributeToClaimMapping -LdapAttribute sAMAccountName -ClaimType "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname" 
+$Mail = New-AdfsLdapAttributeToClaimMapping -LdapAttribute mail -ClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress" 
+
+# Example: $AdditionalAttribute = New-AdfsLdapAttributeToClaimMapping -LdapAttribute mail -ClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress" 
+ 
+# Configure your own identifier like urn:example and define your root user container like "DC=EXAMPLE,DC=COM" 
+# Choose your preferred display name in the Forms-Based Authentication with the -Name parameter 
+ 
+# Example: Add-AdfsLocalClaimsProviderTrust -Name "Partners" -Identifier "urn:leano" -Type Ldap -LdapServerConnection $vendorDirectory -UserObjectClass user -UserContainer "DC=leano,DC=CH" -LdapAuthenticationMethod basic -AnchorClaimLdapAttribute //userPrincipalName -AnchorClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn" -LdapAttributeToClaimMapping @($Name, $Mail) -AcceptanceTransformRules "c:[] => issue(claim=c);" -Enabled $true 
+ 
+Add-AdfsLocalClaimsProviderTrust -Name "External" -Identifier "urn:dev" -Type Ldap -LdapServerConnection $vendorDirectory -UserObjectClass user -UserContainer "DC=EXAMPLE,DC=COM" -LdapAuthenticationMethod basic -AnchorClaimLdapAttribute userPrincipalName -AnchorClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn" -LdapAttributeToClaimMapping @($Name, $Mail) -AcceptanceTransformRules "c:[] => issue(claim=c);" -Enabled $true 
+ 
+Configure Additional Claims Rules 
+# Build a .txt file with the specific Claim rules - in my case ruleset.txt 
+# Change the samAccountName - Domain Suffix to your needs 
+ 
+@RuleName = "Pass through UPN" 
+c:[Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"] 
+=> issue(claim = c); 
+ 
+@RuleName = "Pass through Mail" 
+c:[Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"] 
+=> issue(claim = c); 
+ 
+@RuleName = "Pass through sAMAccountName" 
+c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname"] 
+=> issue(Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Value = "Partners\" + c.Value); 
+ 
+# Set the new defined claim rules 
+# Be aware to use the same name as you have chosen under Add-AdfsLocalClaimsProviderTrust -Name "Partners" 
+ 
+$ruleset = New-AdfsClaimRuleSet -ClaimRuleFile .\ruleset.txt 
+Set-AdfsLocalClaimsProviderTrust -TargetName "Partners" -AcceptanceTransformRules $ruleset.ClaimRulesString 
+ 
+Configure the HRD Cookie Lifetime to save the chosen IDP and to avoid further clicks for the user 
+# In your case we would recommend a Lifetime of 1825 days = 5 years 
+Set-AdfsWebConfig -HRDCookieLifetime 90 -HRDCookieEnabled:$true 
+ 
+Add the additional IDP to your Relying Party Trust configuration 
+# TargetName = your RP you want to configure; and the ClaimsProviderName = Your defined name 
+Set-AdfsRelyingPartyTrust -TargetName "ClaimsXRay" -ClaimsProviderName @("Active Directory","Partners") 
+ 
+Modify the display name of the Active Directory IDP 
+ 
+// Insert the following code to the end of your onload.js script and define your own display name 
+// Update your custom theme with the provided Theme Customization Scripts 
+ 
+if ( document.getElementById("hrdArea") ) { 
+ var strADCPName = "Partners" ; 
+ //Create an array of all claim provider trust section in the page 
+ var listAllSpanForIdp = document.getElementsByClassName("idpDescription float") ; 
+ var inc; 
+ for (inc = 0; inc < listAllSpanForIdp.length; inc++) { 
+ if ( listAllSpanForIdp[ inc ].innerHTML == "<span class=\"largeTextNoWrap indentNonCollapsible\">Active Directory</span>" ) { 
+ //Change the HTML content of the matching section to the value specified in the strADCPName variable 
+ listAllSpanForIdp[ inc ].innerHTML = "<span class=\"largeTextNoWrap indentNonCollapsible\">"+ strADCPName +"</span>" ; 
+ } 
+ } 
+} 
+ 
+Configure the Relying Party Claims Issuance Policy 
+ 
+# Sends all configured claim definitions from the local AD and the additional IDP (urn:example) 
+Claim Issuance Rule 1 
+c:[Issuer =~ "^(SELF AUTHORITY|LOCAL AUTHORITY|urn:dev)$"] 
+ => issue(claim = c); 
+ 
+# Removes the domain suffix in the NameID claim 
+Claim Issuance Rule 2 
+c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname"] 
+ => issue(Type = "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = RegExReplace(c.Value, ".+?\\", ""), ValueType = c.ValueType, Properties["http://schemas.xmlsoap.org/ws/2005/05/identity/claimproperties/format"] = "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified"); 
+ 
+# Restart ADFS Service 
+Restart-service ADFSsrv

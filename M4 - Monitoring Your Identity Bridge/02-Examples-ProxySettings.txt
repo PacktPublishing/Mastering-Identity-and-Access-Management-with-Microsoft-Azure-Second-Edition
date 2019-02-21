@@ -1,0 +1,3 @@
+Set-AzureAdConnectHealthProxySettings -ImportFromInternetSettings
+Set-AzureAdConnectHealthProxySettings -ImportFromWinHttp
+Set-AzureAdConnectHealthProxySettings -HttpsProxyAddress address:port

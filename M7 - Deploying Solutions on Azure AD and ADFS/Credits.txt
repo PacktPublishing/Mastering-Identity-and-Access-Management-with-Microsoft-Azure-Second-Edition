@@ -1,0 +1,6 @@
+ASP.NET Authentication test page
+https://blogs.msdn.microsoft.com/friis/2013/01/08/asp-net-authentication-test-page/
+
+Claims Demo App
+https://blogs.technet.microsoft.com/askpfeplat/2014/08/24/adfs-deep-dive-primer/
+

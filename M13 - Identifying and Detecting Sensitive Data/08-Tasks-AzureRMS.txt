@@ -1,0 +1,10 @@
+Install-Module AADRM
+
+Connect-AadrmService
+
+Enable-AadrmSuperUserFeature
+
+Set-AadrmSuperUserGroup -GroupEmailAddress "AzureRMSSuperUsers@yourdomain1.com"
+
+$cred = Get-Credential
+Install-AIPScanner -SqlServerInstance YD1APP01 -ServiceUserCredentials $cred

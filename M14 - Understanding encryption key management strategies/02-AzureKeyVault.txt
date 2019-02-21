@@ -1,0 +1,4 @@
+# Connecting to Azure RMS with global administrator rights
+Connect-AadrmService
+# Configure Azure RMS to use the key from our key vault
+Use-AadrmKeyVaultKey -KeyVaultKeyUrl "<Your Key Identifier from the notepad>" -FriendlyName FirstBYOKKey -Verbose

@@ -1,0 +1,4 @@
+$accountName = "INOVITDEMOS\svcaadcadma"
+$ForestDN = "DC=INOVITDEMOS,DC=CH"
+$cmd = "dsacls '$ForestDN' /I:S /G '`"$accountName`":WP;ms-ds-consistencyGuid;user'"
+Invoke-Expression $cmd

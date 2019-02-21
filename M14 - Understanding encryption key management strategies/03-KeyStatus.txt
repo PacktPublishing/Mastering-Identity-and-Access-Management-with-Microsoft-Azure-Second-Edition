@@ -1,0 +1,4 @@
+# View the new key with the "Archived state"
+Get-AadrmKeys
+# Next we set the key to the "Active" state
+Set-AAdrmKeyProperties -KeyIdentifier "<Your Key Identifier>" -Active $true

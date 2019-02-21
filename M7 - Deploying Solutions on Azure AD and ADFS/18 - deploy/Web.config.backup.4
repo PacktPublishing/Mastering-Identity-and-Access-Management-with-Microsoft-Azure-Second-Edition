@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  For more information on how to configure your ASP.NET application, please visit
+  http://go.microsoft.com/fwlink/?LinkId=169433
+  -->
+<configuration>
+  <configSections>
+    <section name="microsoft.identityModel" type="Microsoft.IdentityModel.Configuration.MicrosoftIdentityModelSection, Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+  </configSections>
+  <connectionStrings>
+    <add name="ApplicationServices" connectionString="data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\aspnetdb.mdf;User Instance=true" providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  <location path="FederationMetadata">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+  <location path="SignOut.aspx">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+  <system.web>
+    <authorization>
+      <deny users="?" />
+    </authorization>
+    <authentication mode="None" />
+    <compilation debug="true" targetFramework="4.0">
+      <assemblies>
+        <add assembly="Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+      </assemblies>
+    </compilation>
+    <customErrors mode="Off" />
+    <!--Commented out by FedUtil-->
+    <!--<authentication mode="Windows"><forms loginUrl="~/Account/Login.aspx" timeout="2880" /></authentication>-->
+    <membership>
+      <providers>
+        <clear />
+        <add name="AspNetSqlMembershipProvider" type="System.Web.Security.SqlMembershipProvider" connectionStringName="ApplicationServices" enablePasswordRetrieval="false" enablePasswordReset="true" requiresQuestionAndAnswer="false" requiresUniqueEmail="false" maxInvalidPasswordAttempts="5" minRequiredPasswordLength="6" minRequiredNonalphanumericCharacters="0" passwordAttemptWindow="10" applicationName="/" />
+      </providers>
+    </membership>
+    <profile>
+      <providers>
+        <clear />
+        <add name="AspNetSqlProfileProvider" type="System.Web.Profile.SqlProfileProvider" connectionStringName="ApplicationServices" applicationName="/" />
+      </providers>
+    </profile>
+    <roleManager enabled="false">
+      <providers>
+        <clear />
+        <add name="AspNetSqlRoleProvider" type="System.Web.Security.SqlRoleProvider" connectionStringName="ApplicationServices" applicationName="/" />
+        <add name="AspNetWindowsTokenRoleProvider" type="System.Web.Security.WindowsTokenRoleProvider" applicationName="/" />
+      </providers>
+    </roleManager>
+    <httpRuntime requestValidationMode="2.0" />
+  </system.web>
+  <system.webServer>
+    <modules runAllManagedModulesForAllRequests="true">
+      <add name="WSFederationAuthenticationModule" type="Microsoft.IdentityModel.Web.WSFederationAuthenticationModule, Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" preCondition="managedHandler" />
+      <add name="SessionAuthenticationModule" type="Microsoft.IdentityModel.Web.SessionAuthenticationModule, Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" preCondition="managedHandler" />
+    </modules>
+    <httpErrors errorMode="Detailed" />
+  </system.webServer>
+  <appSettings>
+    <add key="FederationMetadataLocation" value="https://contosoadfs2.contoso.com/federationmetadata/2007-06/FederationMetadata.xml" />
+  </appSettings>
+  <microsoft.identityModel>
+    <service saveBootstrapTokens = "true">
+      <audienceUris>
+        <add value="https://claimsweb.contoso.com/" />
+      </audienceUris>
+      <federatedAuthentication>
+        <wsFederation passiveRedirectEnabled="true" issuer="https://contosoadfs2.contoso.com/adfs/ls/" realm="https://claimsweb.contoso.com" requireHttps="true" />
+        <cookieHandler requireSsl="true" />
+      </federatedAuthentication>
+      <applicationService>
+        <claimTypeRequired>
+          <!--Following are the claims offered by STS 'http://contosoadfs2.contoso.com/adfs/services/trust'. Add or uncomment claims that you require by your application and then update the federation metadata of this application.-->
+          <claimType type="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name" optional="true" />
+          <claimType type="http://schemas.microsoft.com/ws/2008/06/identity/claims/role" optional="true" />
+          <!--<claimType type="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress" optional="true" />-->
+          <!--<claimType type="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname" optional="true" />-->
+          <!--<claimType type="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn" optional="true" />-->
+          <!--<claimType type="http://schemas.xmlsoap.org/claims/CommonName" optional="true" />-->
+          <!--<claimType type="http://schemas.xmlsoap.org/claims/EmailAddress" optional="true" />-->
+          <!--<claimType type="http://schemas.xmlsoap.org/claims/Group" optional="true" />-->
+          <!--<claimType type="http://schemas.xmlsoap.org/claims/UPN" optional="true" />-->
+          <!--<claimType type="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname" optional="true" />-->
+          <!--<claimType type="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/privatepersonalidentifier" optional="true" />-->
+          <!--<claimType type="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier" optional="true" />-->
+          <!--<claimType type="http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationinstant" optional="true" />-->
+          <!--<claimType type="http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationmethod" optional="true" />-->
+          <!--<claimType type="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/denyonlysid" optional="true" />-->
+          <!--<claimType type="http://schemas.microsoft.com/ws/2008/06/identity/claims/denyonlyprimarysid" optional="true" />-->
+          <!--<claimType type="http://schemas.microsoft.com/ws/2008/06/identity/claims/denyonlyprimarygroupsid" optional="true" />-->
+          <!--<claimType type="http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid" optional="true" />-->
+          <!--<claimType type="http://schemas.microsoft.com/ws/2008/06/identity/claims/primarygroupsid" optional="true" />-->
+          <!--<claimType type="http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid" optional="true" />-->
+          <!--<claimType type="http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname" optional="true" />-->
+        </claimTypeRequired>
+      </applicationService>
+      <issuerNameRegistry type="Microsoft.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry, Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+        <trustedIssuers>
+          <add thumbprint="95922D48EE4FA50E18E6B3699C10F6E5E7C2253C" name="http://contosoadfs2.contoso.com/adfs/services/trust" />
+        </trustedIssuers>
+      </issuerNameRegistry>
+      <certificateValidation certificateValidationMode="None" />
+    </service>
+  </microsoft.identityModel>
+</configuration>

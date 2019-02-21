@@ -1,0 +1,6 @@
+New-Item -Path C:\SyncedDepartmentFolders -ItemType Directory
+
+$date = Get-Date
+$AutomaticClassificationScheduledTask = New-FsrmScheduledTask -Time $date -Weekly @(3, 2, 4, 5,1,6,0) -RunDuration 0;
+Set-FsrmClassification -Continuous -schedule $AutomaticClassificationScheduledTask
+New-FSRMClassificationRule -Name "Finance Department Sync Folder Information Protection" -Property "Department_MS" -Description "Protecting finance information on department synchronization folders based on 'Confidential' key word in files" -PropertyValue "Finance" -Namespace @("C:\SyncedDepartmentFolders") -ClassificationMechanism "Content Classifier" -Parameters @("StringEx=Min=1;Expr=Confidential") -ReevaluateProperty Overwrite

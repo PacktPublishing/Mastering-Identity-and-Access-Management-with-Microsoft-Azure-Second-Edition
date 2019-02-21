@@ -1,0 +1,4 @@
+$accountName = "INOVITLABS\svcaadcadma"
+$ForestDN = "OU=Managed Business Objects,DC=inovitlabs,DC=ch"
+$cmd = "dsacls '$ForestDN' /I:S /G '`"$accountName`":WP;ms-ds-consistencyGuid;user'"
+Invoke-Expression $cmd

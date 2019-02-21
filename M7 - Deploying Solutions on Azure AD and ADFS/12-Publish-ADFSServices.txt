@@ -1,0 +1,1 @@
+Add-WebApplicationProxyApplication -Name "Federation Services" -BackendServerUrl "https://login.inovitdemos.ch/" -ExternalUrl "https://login.inovitdemos.ch/" -ExternalPreauthentication "PassThrough" -ExternalCertificateThumbprint "66F1BF8CCD904DF74154A5D24769DE155E874257"

@@ -1,0 +1,16 @@
+Connect-MsolService - Enter your global administrator credentials
+Convert-MsolDomainToFederated -DomainName identityplus.ch -SupportMultipleDomain
+
+$certTS=Get-AdfsCertificate -CertificateType Token-Signing
+$certInf=$certTS[0].Certificate.Export([System.Security.Cryptography.X509Certificates.X509ContentType]::Cert)[System.IO.File]::WriteAllBytes("c:\temp\idplus-ts.cer", $certBytes)
+
+$crt = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2("c:\temp\idplus-ts.cer")
+$certData = [system.convert]::tobase64string($cert.rawdata)
+$customdomain="apac.identityplus.ch"
+$url="https://login.identityplus.ch/adfs/ls/"
+$uri="http://login.identityplus.ch/adfs/services/trust/"
+$ura="https://login.identityplus.ch/adfs/services/trust/2005/usernamemixed"
+$logouturl="https://login.identityplus.ch/adfs/ls/"
+$metadata="https://login.identityplus.ch /adfs/services/trust/mex"
+
+Set-MsolDomainAuthentication -DomainName $customdomain -Authentication Federated -ActiveLogOnUri $ura -PassiveLogOnUri $url -MetadataExchangeUri $metadata -SigningCertificate $certData -IssuerUri $uri -LogOffUri $logouturl -PreferredAuthenticationProtocol WsFed

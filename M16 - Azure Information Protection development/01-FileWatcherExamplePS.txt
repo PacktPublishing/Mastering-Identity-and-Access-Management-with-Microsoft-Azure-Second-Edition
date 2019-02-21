@@ -1,0 +1,42 @@
+1.	SET FOLDER TO WATCH + FILES TO WATCH + SUBFOLDERS YES/NO
+$watcher = New-Object System.IO.FileSystemWatcher
+ $watcher.Path = "C:\Users\jochen.nickel\Desktop\Monitored"
+ $watcher.Filter = "*.*"
+ $watcher.IncludeSubdirectories = $true
+ $watcher.EnableRaisingEvents = $true
+2.	DEFINE ACTIONS AFTER AN EVENT IS DETECTED
+$action = { 
+ $fname = $Event.SourceEventArgs.Name
+ if ($fname -like "*.tmp" -or $fname -like "*~$*"){}
+ else {
+ $path = $Event.SourceEventArgs.FullPath
+ 
+ $changeType = $Event.SourceEventArgs.ChangeType
+ $logline = "$(Get-Date), $changeType, $path"
+ #write-host $logline
+ Add-content "C:\Users\jochen.nickel\Desktop\log.txt" -value $logline
+ }
+ }
+$action1 = { 
+ $fname = $Event.SourceEventArgs.Name
+ if ($fname -like "*.tmp" -or $fname -like "*~$*" -or $fname -like "*.TMP" ){}
+ else {
+ $path = $Event.SourceEventArgs.FullPath
+ 
+ $changeType = $Event.SourceEventArgs.ChangeType
+ $logline = "$(Get-Date), $changeType, $path"
+ write-host $logline
+ Add-content "C:\Users\jochen.nickel\Desktop\log.txt" -value $logline
+ Set-AIPFileLabel $path -LabelId '6523069d-6f4a-4486-8dc3-71de23457c71'
+ $logline = "$(Get-Date), APPLIED: Set-AIPFileLabel $path -LabelId '6523069d-6f4a-4486-8dc3-71de23457c71'"
+ write-host $logline
+ Add-content "C:\Users\jochen.nickel\Desktop\log.txt" -value $logline
+ }
+ } 
+ 
+3.	DECIDE WHICH EVENTS SHOULD BE WATCHED + SET CHECK FREQUENCY
+$created = Register-ObjectEvent $watcher "Created" -Action $action1
+ $changed = Register-ObjectEvent $watcher "Changed" -Action $action
+ $deleted = Register-ObjectEvent $watcher "Deleted" -Action $action
+ $renamed = Register-ObjectEvent $watcher "Renamed" -Action $action
+ while ($true) {sleep 2}

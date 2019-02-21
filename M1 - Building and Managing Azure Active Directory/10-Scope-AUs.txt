@@ -1,0 +1,14 @@
+Get-AzureADDirectoryRoleTemplate
+
+Enable-AzureADDirectoryRole -RoleTemplateId fe930be7-5e62-47db-91af-98c3a49a38b1
+
+$admins = Get-AzureADDirectoryRole
+foreach($i in $admins) {
+    if($i.DisplayName -eq "User Account Administrator") {
+        $uaAdmin = $i
+        }
+    }
+
+$HRUA = Get-AzureADUser -Filter "UserPrincipalName eq 'Don.Hall@$InitialDomain'"
+$uaRoleMemberInfo = New-Object -TypeName Microsoft.Open.AzureAD.Model.RoleMemberInfo -Property @{ ObjectId = $HRUA.ObjectId }
+Add-AzureADScopedRoleMembership -RoleObjectId $uaAdmin.ObjectId -ObjectId $HRAU.ObjectId -RoleMemberInfo $uaRoleMemberInfo

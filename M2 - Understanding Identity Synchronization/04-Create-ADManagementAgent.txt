@@ -1,0 +1,1 @@
+New-ADUser -Name "svcaadcadma" -SamAccountName svcaadcadma -UserPrincipalName svcaadcadma@inovitlabs.ch -path "OU=Users,OU=AAD,OU=Managed Service Objects,DC=inovitlabs,DC=ch" -AccountPassword (ConvertTo-SecureString "Pass@word1" -AsPlainText -Force) -Enabled $True

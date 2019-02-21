@@ -1,0 +1,1 @@
+Add-DnsServerResourceRecord -ZoneName "inovitdemos.ch" -A -Name "rms" -IPv4Address "10.0.0.11"

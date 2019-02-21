@@ -1,0 +1,1 @@
+New-ADUser -Name "Jochen Nickel" -GivenName Jochen -Surname Nickel -SamAccountName jochen.nickel -UserPrincipalName jochen.nickel@inovitlabs.ch -path "OU=Users,OU=Managed Business Objects,DC=inovitlabs,DC=ch" -AccountPassword (ConvertTo-SecureString "Pass@word1" -AsPlainText -Force) -Enabled $True

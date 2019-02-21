@@ -1,0 +1,2 @@
+Add-KdsRootKey -EffectiveTime (Get-Date).AddHours(-10)
+New-ADServiceAccount svcadfs -DNSHostName login.inovitdemos.ch -ServicePrincipalNames http/login.inovitdemos.ch

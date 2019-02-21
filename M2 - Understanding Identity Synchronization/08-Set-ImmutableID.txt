@@ -1,0 +1,3 @@
+$guid = (Get-ADUser -Identity jochen.nickel).ObjectGUID
+$immutableid=[System.Convert]::ToBase64String($guid.tobytearray())
+Set-MsolUser -UserPrincipalName jochen.nickel@inovitlabs.ch -ImmutableId $immutableid

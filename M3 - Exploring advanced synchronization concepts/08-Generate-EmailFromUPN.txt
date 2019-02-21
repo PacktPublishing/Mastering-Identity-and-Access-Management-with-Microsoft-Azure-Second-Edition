@@ -1,0 +1,6 @@
+ Import-Module ActiveDirectory 
+ Get-ADUser -LDAPFilter '(userPrincipalName=*)' `
+-Properties userPrincipalName,mail | Select-Object * | `
+ForEach-Object { Set-ADObject -Identity `
+$_.DistinguishedName -Replace `
+@{mail=$($_.userPrincipalName)} }

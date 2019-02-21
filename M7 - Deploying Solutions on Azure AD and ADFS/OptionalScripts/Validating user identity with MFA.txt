@@ -1,0 +1,6 @@
+@RuleTemplate = "Authorization"
+@RuleName = "UserValidationWithMFA"
+c:[Type == "http://schemas.microsoft.com/claims/authnmethodsreferences",
+Value =~ "^(?i)http://schemas\.microsoft\.com/claims/multipleauthn$"] =>
+issue(Type = "http://schemas.microsoft.com/authorization/claims/permit",
+Value = "PermitUsersWithClaim");

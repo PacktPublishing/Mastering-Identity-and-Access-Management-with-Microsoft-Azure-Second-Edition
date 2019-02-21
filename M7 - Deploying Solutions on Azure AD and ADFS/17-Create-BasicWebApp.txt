@@ -1,0 +1,4 @@
+New-Item C:\inetpub\basicroot -type Directory
+Import-Module Webadministration
+cd IIS:
+New-Item 'IIS:\Sites\basic Web Site' -bindings @{protocol="http";bindingInformation=":80:basic.inovitdemos.ch"} -physicalPath 'c:\inetpub\basicroot'

@@ -1,0 +1,38 @@
+#!python
+import sys
+
+Import("""
+    api_includes_dir
+    bins
+    env
+    samples_dir
+""")
+
+common_sample_env = env.Clone()
+
+includes_path = [ api_includes_dir ]
+
+common_sample_env.Append(CPPPATH = includes_path)
+
+src_files = Split("""
+    auth.cpp
+    auth_delegate_impl.cpp
+    string_utils.cpp
+""")
+
+common_sample_lib = common_sample_env.StaticLibrary(target = "common_sample", source = src_files)
+Install(bins, 'auth.py')
+
+common_sample_source = [
+    samples_dir + '/common/auth.py',
+    samples_dir + '/common/auth_delegate_impl.cpp',
+    samples_dir + '/common/auth_delegate_impl.h',
+    samples_dir + '/common/auth.cpp',
+    samples_dir + '/common/auth.h',
+    samples_dir + '/common/string_utils.cpp',
+    samples_dir + '/common/string_utils.h',
+    samples_dir + '/common/cxxopts.hpp',
+    samples_dir + '/common/SConscript'
+]
+
+Return('common_sample_lib', 'common_sample_source')

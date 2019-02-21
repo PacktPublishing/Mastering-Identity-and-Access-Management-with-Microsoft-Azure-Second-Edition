@@ -1,0 +1,5 @@
+# Install for all users (requires an elevated PowerShell)
+Install-Module -Name Posh-ACME
+
+# Install for current user
+Install-Module -Name Posh-ACME -Scope CurrentUser

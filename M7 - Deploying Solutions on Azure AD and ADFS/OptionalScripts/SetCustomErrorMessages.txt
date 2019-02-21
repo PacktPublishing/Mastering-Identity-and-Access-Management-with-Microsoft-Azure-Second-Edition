@@ -1,0 +1,6 @@
+Set-AdfsGloblaWebContent -ErrorPageDescriptionText "This is the identityplus error page description."
+Set-AdfsGlobalWebContent -ErrorPageGenericErrorMessage "This is a generic error message. Contact identityplus IT for assistance. "
+Set-AdfsGlobalWebContent -ErrorPageAuthorizationErrorMessage "You have received an Authorization error. Contact identityplus IT for assistance. "
+Set-AdfsGlobalWebContent -ErrorPageDeviceAuthenticationErrorMessage "Your device is not authorized. Contact identityplus IT for assistance. Or directly register your device. "
+Set-AdfsGlobalWebContent -ErrorPageSupportEmail "servicedesk@identityplus.ch"
+Set-AdfsRelyingPartyWebContent -Name fedpassive -ErrorPageAuthorizationErrorMessage "<p> You need to be a member of HR group to access this site. Click <A href='http://accessrequests.identityplus.ch/'>here</A> for more information.</p>"

@@ -1,0 +1,56 @@
+#!python
+import sys
+
+Import("""
+    api_includes_dir
+    common_sample_lib
+    bins
+    consent_sample_lib
+    file_target_name
+    upe_target_name
+    protection_target_name
+    env
+    platform
+    resources
+    protection_supported_platforms
+    samples_dir
+""")
+
+includes_path = [
+    api_includes_dir,
+    samples_dir + '/common',
+    samples_dir + '/consent' ]
+
+src_files = Split("""
+    file_handler_observer.cpp
+    main.cpp
+    profile_observer.cpp
+""")
+
+file_sample_bin = ''
+
+if platform in protection_supported_platforms:
+    file_sample_env = env.Clone()
+    file_sample_env.Append(CPPPATH = includes_path)
+    file_sample_env.Append(LIBPATH= [bins])
+    file_sample_env.Append(LIBS= [file_target_name, protection_target_name, common_sample_lib, consent_sample_lib])
+
+    if platform == 'darwin':
+        file_sample_env.Append(LINKFLAGS= ['-Wl,-rpath,@executable_path'])
+    elif platform == 'linux2':
+        file_sample_env.Append(LINKFLAGS= ['-Wl,-rpath-link,{0}'.format(Dir(bins).path)])
+        file_sample_env.Append(RPATH= env.Literal('\\$$ORIGIN'))
+
+    file_sample_bin = file_sample_env.Program('file_sample', source = [src_files, resources])
+
+file_sample_source = [
+    samples_dir + '/file/file_handler_observer.cpp',
+    samples_dir + '/file/file_handler_observer.h',
+    samples_dir + '/file/main.cpp',
+    samples_dir + '/file/profile_observer.cpp',
+    samples_dir + '/file/profile_observer.h',
+    samples_dir + '/file/SConscript'
+]
+
+Return('file_sample_bin', 'file_sample_source')
+

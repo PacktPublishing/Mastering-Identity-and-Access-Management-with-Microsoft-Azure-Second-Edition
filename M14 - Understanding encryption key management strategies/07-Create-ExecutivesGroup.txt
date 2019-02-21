@@ -1,0 +1,1 @@
+New-ADGroup -Name "Executives" -SamAccountName "Executives" -GroupCategory Security -GroupScope Global -DisplayName "Executives" -Path "OU=Groups,OU=Managed Business Objects,DC=inovitdemos,DC=ch" -Description "Executives"

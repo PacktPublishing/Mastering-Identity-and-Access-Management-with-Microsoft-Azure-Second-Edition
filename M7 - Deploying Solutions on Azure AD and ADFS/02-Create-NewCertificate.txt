@@ -1,0 +1,1 @@
+New-PACertificate '*.inovitdemos.ch','certauth.login.inovitdemos.ch' -AcceptTOS -Contact jochen.nickel@inovit.ch

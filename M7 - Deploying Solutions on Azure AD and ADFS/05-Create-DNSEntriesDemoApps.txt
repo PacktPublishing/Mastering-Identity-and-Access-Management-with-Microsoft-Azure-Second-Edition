@@ -1,0 +1,5 @@
+Add-DnsServerResourceRecord -ZoneName "inovitdemos.ch" -A -Name "claims" -IPv4Address "10.0.0.6"
+Add-DnsServerResourceRecord -ZoneName "inovitdemos.ch" -A -Name "kerb" -IPv4Address "10.0.0.6"
+Add-DnsServerResourceRecord -ZoneName "inovitdemos.ch" -A -Name "ntlm" -IPv4Address "10.0.0.6"
+Add-DnsServerResourceRecord -ZoneName "inovitdemos.ch" -A -Name "basic" -IPv4Address "10.0.0.6"
+Add-DnsServerResourceRecord -ZoneName "inovitdemos.ch" -A -Name "forms" -IPv4Address "10.0.0.6"

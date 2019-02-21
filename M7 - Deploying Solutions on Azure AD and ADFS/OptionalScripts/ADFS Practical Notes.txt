@@ -1,0 +1,8 @@
+Set-ADFSProperties -LogLevel Information,Errors,Verbose,Warnings,FailureAudits,SuccessAudits
+
+auditpol.exe /set /subcategory:"Application Generated" /failure:enable /success:enable
+
+Set-AdfsProperties -Certificateduration 1827
+Update-AdfsCertificate -CertificateType Token-Decrypting -Urgent
+Update-AdfsCertificate -CertificateType Token-Signing -Urgent
+

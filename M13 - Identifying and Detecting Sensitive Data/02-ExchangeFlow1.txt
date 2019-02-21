@@ -1,0 +1,6 @@
+# Open an evaluated PowerShell
+# Provide your global administrator credentials
+$Creds = Get-Credential
+$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $Creds -Authentication Basic -AllowRedirection
+Import-PSSession $Session
+New-TransportRule -Name "Protect external mails (Contains Credit Card)" -SentToScope NotInOrganization -ApplyRightsProtectionTemplate "Encrypt" -MessageContainsDataClassifications @(@{Name="Credit Card Number"; minCount="1"})

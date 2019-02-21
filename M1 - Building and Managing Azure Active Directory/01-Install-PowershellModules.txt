@@ -1,0 +1,3 @@
+Install-Module -Name AzureADPreview
+Install-Module -Name MSOnline
+Install-Module AzureRM

@@ -1,0 +1,2 @@
+.\deploy-testsite.ps1 -SourcePath
+"C:\inovit\deploy" -SiteName "claims Web Site" -SitePhysicalPath C:\inetpub\claimsroot -ADFSServer inodemosads01 -AppFQDN claims.inovitdemos.ch

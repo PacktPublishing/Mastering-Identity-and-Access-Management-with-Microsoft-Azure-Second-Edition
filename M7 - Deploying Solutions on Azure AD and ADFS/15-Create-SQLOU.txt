@@ -1,0 +1,2 @@
+New-ADOrganizationalUnit -Name "SQL" -Path "OU=Managed Service Objects,DC=INOVITDEMOS,DC=CH"
+New-ADOrganizationalUnit -Name "Users" -Path "OU=SQL,OU=Managed Service Objects,DC=INOVITDEMOS,DC=CH"

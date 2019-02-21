@@ -1,0 +1,4 @@
+New-ADOrganizationalUnit -Name "AIP" -Path "OU=Managed Service Objects,DC=INOVITDEMOS,DC=CH"
+New-ADOrganizationalUnit -Name "Users" -Path "OU=AIP,OU=Managed Service Objects,DC=INOVITDEMOS,DC=CH"
+New-ADOrganizationalUnit -Name "Groups" -Path "OU=AIP,OU=Managed Service Objects,DC=INOVITDEMOS,DC=CH"
+New-ADOrganizationalUnit -Name "Servers" -Path "OU=AIP,OU=Managed Service Objects,DC=INOVITDEMOS,DC=CH"

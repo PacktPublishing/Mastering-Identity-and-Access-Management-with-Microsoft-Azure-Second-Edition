@@ -1,0 +1,4 @@
+New-Item C:\inetpub\kerbroot -type Directory
+Import-Module Webadministration
+cd IIS:
+New-Item 'IIS:\Sites\kerb Web Site' -bindings @{protocol="http";bindingInformation=":80:kerb.inovitdemos.ch"} -physicalPath 'c:\inetpub\kerbroot'

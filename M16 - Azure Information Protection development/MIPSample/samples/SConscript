@@ -1,0 +1,51 @@
+Import("""
+    env
+    bins
+    platform
+    protection_supported_platforms
+    samples_dir
+""")
+
+sample_source = [
+    samples_dir + '/how-to-build-and-run.txt',
+    samples_dir + '/policy.xml',
+    samples_dir + '/SConscript',
+    samples_dir + '/SConstruct'
+]
+
+sample_bins = [samples_dir + '/common/auth.py', samples_dir + '/policy.xml']
+
+[common_sample_lib, common_sample_source] = env.SConscript('common/SConscript', duplicate=0)
+Export('common_sample_lib')
+
+[consent_sample_lib, consent_sample_source] = env.SConscript('consent/SConscript', duplicate=0)
+Export('consent_sample_lib')
+
+upe_sample_source = file_sample_source = protection_sample_source = None
+upe_sample_bin = file_sample_bin = protection_sample_bin = None
+
+if File('upe/SConscript').srcnode().exists():
+    [upe_sample_bin, upe_sample_source] = env.SConscript('upe/SConscript', duplicate=0)
+    Install(bins, upe_sample_bin)
+
+if File('file/SConscript').srcnode().exists():
+    [file_sample_bin, file_sample_source] = env.SConscript('file/SConscript', duplicate=0)
+    if platform in protection_supported_platforms:
+        Install(bins, file_sample_bin)
+
+if File('protection/SConscript').srcnode().exists():
+    [protection_sample_bin, protection_sample_source] = env.SConscript('protection/SConscript', duplicate=0)
+    if platform in protection_supported_platforms:
+        Install(bins, protection_sample_bin)
+
+Return(
+    'sample_bins',
+    'file_sample_bin',
+    'protection_sample_bin',
+    'upe_sample_bin',
+    'sample_source',
+    'common_sample_source',
+    'consent_sample_source',
+    'file_sample_source',
+    'protection_sample_source',
+    'upe_sample_source')

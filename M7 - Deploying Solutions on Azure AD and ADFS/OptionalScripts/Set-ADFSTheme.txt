@@ -1,0 +1,2 @@
+Set-AdfsWebTheme -TargetName SSPRCustom -AdditionalFileResource @{Uri='/adfs/portal/script/onload.js';path="c:\Configuration\SSPR\script\onload.js"}
+Set-AdfsWebConfig -ActiveThemeName SSPRCustom

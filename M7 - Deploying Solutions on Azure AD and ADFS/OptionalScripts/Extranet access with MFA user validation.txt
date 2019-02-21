@@ -1,0 +1,9 @@
+@RuleTemplate = "Authorization"
+@RuleName = "MFAForExtranetAccess"
+c1:[Type == "http://schemas.microsoft.com/claims/authnmethodsreferences",
+Value =~ "^(?i)http://schemas\.microsoft\.com/claims/multipleauthn$"] &&
+c2:[Type ==
+"http://schemas.microsoft.com/ws/2012/01/insidecorporatenetwork", Value =~
+"^(?i)false$"] => issue(Type =
+"http://schemas.microsoft.com/authorization/claims/permit", Value =
+"PermitUsersWithClaim");

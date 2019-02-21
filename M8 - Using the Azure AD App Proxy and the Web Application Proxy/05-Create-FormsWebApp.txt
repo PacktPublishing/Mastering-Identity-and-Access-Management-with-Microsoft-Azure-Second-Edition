@@ -1,0 +1,4 @@
+New-Item C:\inetpub\formsroot -type Directory
+Import-Module Webadministration
+cd IIS:
+New-Item 'IIS:\Sites\forms Web Site' -bindings @{protocol="http";bindingInformation=":80:forms.inovitdemos.ch"} -physicalPath 'c:\inetpub\formsroot'

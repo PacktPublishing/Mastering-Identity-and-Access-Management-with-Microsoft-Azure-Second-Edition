@@ -1,0 +1,3 @@
+Import-Module AdRmsAdmin
+New-PSDrive -Name AdrmsCluster -PSProvider AdRmsAdmin -Root https://localhost
+Get-ChildItem -Path AdRmsCluster:\RightsPolicyTemplate

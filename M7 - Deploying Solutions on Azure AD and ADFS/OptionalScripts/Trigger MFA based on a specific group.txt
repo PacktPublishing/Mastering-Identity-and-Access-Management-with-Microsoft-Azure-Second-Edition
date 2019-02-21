@@ -1,0 +1,8 @@
+$rp = Get-AD FSRelyingPartyTrust -Name "SharePoint"
+$GroupMfaClaimTriggerRule = 'c:[Type ==
+"http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", Value
+=~ "^(?i) S-1-5-21-3123384963-3601710319-2843089171-2145$"] => issue(Type =
+"http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationmeth
+od", Value = "http://schemas.microsoft.com/claims/multipleauthn");'
+Set-AD FSRelyingPartyTrust -TargetRelyingParty $rp -
+AdditionalAuthenticationRules $GroupMfaClaimTriggerRule

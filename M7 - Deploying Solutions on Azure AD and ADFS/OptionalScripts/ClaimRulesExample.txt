@@ -1,0 +1,1 @@
+c1:[type == "http://example/firstname"] && c2:[type == "http://example/lastname"] => issue(Type = "http://example/name", Value = c1.value+" "+c2.value);

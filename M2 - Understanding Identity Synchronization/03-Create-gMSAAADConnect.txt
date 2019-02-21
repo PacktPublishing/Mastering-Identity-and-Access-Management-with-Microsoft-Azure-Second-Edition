@@ -1,0 +1,2 @@
+Add-KdsRootKey -EffectiveTime (Get-Date).AddHours(-10)
+New-ADServiceAccount -Name svcaadconnect -DNSHostname INOLABSADS01 -PrincipalsAllowedToRetrieveManagedPassword INOLABSADS01$

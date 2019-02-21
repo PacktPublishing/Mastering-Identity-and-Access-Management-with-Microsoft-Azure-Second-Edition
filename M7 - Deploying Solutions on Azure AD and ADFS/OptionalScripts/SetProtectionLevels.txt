@@ -1,0 +1,4 @@
+Set-AdfsProperties -ExtranetLockoutEnabled: $true
+Set-AdfsProperties -ExtranetLockoutThreshold 3
+Set-AdfsProperties -ExtranetObservationWindows: (new-timespan - Minutes 30)
+Get-AdfsProperties | Select-Object *extranet* | fl

@@ -1,0 +1,29 @@
+#!python
+import sys
+
+Import("""
+    api_includes_dir
+    bins
+    env
+    samples_dir
+""")
+
+consent_sample_env = env.Clone()
+
+includes_path = [ api_includes_dir ]
+
+consent_sample_env.Append(CPPPATH = includes_path)
+
+src_files = Split("""
+    consent_delegate_impl.cpp
+""")
+
+consent_sample_lib = consent_sample_env.StaticLibrary(target = "consent_sample", source = src_files)
+
+consent_sample_source = [
+    samples_dir + '/consent/consent_delegate_impl.cpp',
+    samples_dir + '/consent/consent_delegate_impl.h',
+    samples_dir + '/consent/SConscript'
+]
+
+Return('consent_sample_lib', 'consent_sample_source')

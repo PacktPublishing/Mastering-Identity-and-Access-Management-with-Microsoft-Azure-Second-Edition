@@ -1,0 +1,13 @@
+Connect-AzureAD
+# Provide global administrator rights
+
+# Export the existing users to a CSV
+Get-AzureADUser -All $True | Where { $_.UserPrincipalName.ToLower().EndsWith("onmicrosoft.com")} | Export-Csv C:\Office365Users.csv
+
+# Modify selected user's UPN
+$domain = "inovitlabs.ch"
+Import-Csv 'C:\Office365Users.csv' | ForEach-Object {
+$newupn = $_.UserPrincipalName.Split("@")[0] + "@" + $domain
+ Write-Host "Changing UPN value from: "$_.UserPrincipalName" to: " $newupn -ForegroundColor Green
+ Set-AzureADUser -ObjectId $_.UserPrincipalName -UserPrincipalName $newupn
+}

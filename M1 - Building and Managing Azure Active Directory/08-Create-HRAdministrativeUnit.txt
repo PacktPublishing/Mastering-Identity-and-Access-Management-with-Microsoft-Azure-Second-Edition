@@ -1,0 +1,4 @@
+Connect-AzureAD
+# Provide global administrator credentials
+
+New-AzureADAdministrativeUnit -Description "Human Resources Users" -DisplayName "HR"

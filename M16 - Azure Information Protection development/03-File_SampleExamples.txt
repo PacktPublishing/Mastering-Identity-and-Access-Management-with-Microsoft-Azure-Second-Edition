@@ -1,0 +1,8 @@
+Get a list of labels
+./file_sample --username jenny.green@leano.ch --password "YOURPASSWORD " --file "PATH" --listlabels
+
+Set a label
+./file_sample --username jenny.green@leano.ch --password "YOURPASSWORD" --file "PATH" --setlabel <GUID>
+
+Read a label
+./file_sample --username jenny.green@leano.ch --password "YOURPASSWORD" --file "PATH" --getfilestatus

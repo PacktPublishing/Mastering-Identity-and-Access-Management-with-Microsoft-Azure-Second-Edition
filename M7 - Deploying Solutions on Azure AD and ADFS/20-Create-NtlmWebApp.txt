@@ -1,0 +1,4 @@
+New-Item C:\inetpub\ntlmroot -type Directory
+Import-Module Webadministration
+cd IIS:
+New-Item 'IIS:\Sites\ntlm Web Site' -bindings @{protocol="http";bindingInformation=":80:ntlm.inovitdemos.ch"} -physicalPath 'c:\inetpub\ntlmroot'

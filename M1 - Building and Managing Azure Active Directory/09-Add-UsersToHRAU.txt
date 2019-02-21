@@ -1,0 +1,7 @@
+$HRAU = Get-AzureADAdministrativeUnit -Filter "displayname eq 'HR'"
+$initialDomain = (Get-AzureADDomain)[0].Name
+$HRUser1 = Get-AzureADUser -Filter "UserPrincipalName eq 'don.hall@$InitialDomain'"
+$HRUser2 = Get-AzureADUser -Filter "UserPrincipalName eq 'ellen.adams@$InitialDomain'"
+Add-AzureADAdministrativeUnitMember -ObjectId $HRAU.ObjectId -RefObjectId $HRUser1.ObjectId
+Add-AzureADAdministrativeUnitMember -ObjectId $HRAU.ObjectId -RefObjectId $HRUser2.ObjectId
+Get-AzureADAdministrativeUnitMember -ObjectId $HRAU.ObjectId | Get-AzureADUser

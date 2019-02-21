@@ -1,0 +1,1 @@
+You have successfully updated your application's federation metadata.

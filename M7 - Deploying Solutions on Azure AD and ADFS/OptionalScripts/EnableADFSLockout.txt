@@ -1,0 +1,6 @@
+Set-AdfsProperties -ExtranetObservationWindow ( new-timespan -minutes 30 )
+Set-AdfsProperties -ExtranetLockoutThreshold 5
+Set-AdfsProperties -ExtranetLockoutThresholdFamiliarLocation 10
+Set-AdfsProperties -ExtranetLockoutMode AdfsSmartLockoutEnforce
+Set-AdfsProperties -EnableExtranetLockout $true
+Restart-Service adfssrv

@@ -1,0 +1,5 @@
+Connect-AzureAD
+# Provide global administrator credentials
+
+# Check the new Test User over the AzureAD PowerShell Module
+Get-AzureADUser -all $true | where userprincipalname -eq jochen.nickel@inovitcloudlabs.onmicrosoft.com | fl

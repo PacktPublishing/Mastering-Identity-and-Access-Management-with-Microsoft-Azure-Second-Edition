@@ -1,0 +1,8 @@
+Connect-MsolService
+# With Don.Hall@domain.onmicrosoft.com credentials
+
+# Modify a user account assigned to the HR administrative unit
+Set-MsolUser -UserPrincipalName ellen.adams@domain.onmicrosoft.com -Department HR
+
+# Verify your modification
+Get-MsolUser -UserPrincipalName ellen.adams@domain.onmicrosoft.com | select Department

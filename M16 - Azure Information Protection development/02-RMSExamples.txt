@@ -1,0 +1,25 @@
+$ServicePrincipalName="RMSPowerShell"
+Connect-AadrmService
+$bposTenantID=(Get-AadrmConfiguration).BPOSId
+Disconnect-AadrmService
+Connect-MsolService
+New-MsolServicePrincipal -DisplayName $ServicePrincipalName
+
+
+$symmetricKey="<value from the display of the New-MsolServicePrincipal command>"
+$appPrincipalID=(Get-MsolServicePrincipal | Where { $_.DisplayName -eq $ServicePrincipalName }).AppPrincipalId
+Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -BposTenantId $bposTenantID
+
+
+
+Enumerate all RMS templates
+Get-RMSTemplate
+
+Protect a file
+Protect-RMSFile -File C:\Test.docx -InPlace -TemplateId <yourtemplateid>
+
+Get the status of a file
+Get-RMSFileStatus -File C:\Test1.docx
+
+Unprotect a file
+Unprotect-RMSFile C:\test.docx -InPlace

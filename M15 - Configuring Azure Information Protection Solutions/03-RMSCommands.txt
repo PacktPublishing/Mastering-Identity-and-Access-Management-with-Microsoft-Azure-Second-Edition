@@ -1,0 +1,79 @@
+Connect to the Azure RMS service with global administrator rights
+Connect-AadrmService
+
+Get all super user commands
+Get-Command "*SuperUser*"
+
+Check the super user feature
+Get-AadrmSuperUserFeature
+
+Enable the super user feature
+Enable-AadrmSuperUserFeature
+
+Get all super users
+Get-AadrmSuperUser
+Get-AadrmSuperUserGroup
+
+Set a super user group
+Set-AadrmSuperUserGroup -GroupEmailAddress "azurermssuperusers@inovitdemos.ch"
+
+
+To administer the Azure RMS service, we can delegate the administrative rights with the following cmdlets:
+Get-AadrmRoleBasedAdministrator
+Add-AadrmRoleBasedAdministrator
+
+To enable the onboarding controls
+Set-AadrmOnboardingControlPolicy
+
+Get all template commands
+Get-Command -Module AADRM Template
+
+Get all templates
+Get-AadrmTemplate
+
+Remove templates
+Remove-AadrmTemplate -TemplateId "template ID"
+
+Create a new template
+$names = @{}
+ $names[1033] = "Template Name"
+ $descriptions = @{}
+ $descriptions[1033] = "Template description"
+ $r1 = New-AadrmRightsDefinition -DomainName "yourdomain1.com" -Rights "VIEW","EXPORT"
+ $r2 = New-AadrmRightsDefinition -EmailAddress "Email address of group or user" -Rights "OWNER"
+ Add-AadrmTemplate -Names $names -Descriptions $Descriptions -LicenseValidityDuration 7 -RightsDefinitions $r1, $r2 -Status Published
+
+Get the actual Azure RMS configuration
+Get-AadrmConfiguration
+
+Get all the log commands
+Get-Command "*Log*" -Module AADRM
+
+Create a AIP log directory and set the variables
+New-Item -ItemType directory -Path C:\AIPLogs\User
+New-Item -ItemType directory -Path C:\AIPLogs\Admin
+$UserLogs = "C:\AIPLogs\User"
+$AdminLogs = "C:\AIPLogs\Admin"
+
+Get the user logs
+Get-AadrmUserLog -Path $UserLogs -FromDate (Get-Date).AddDays(-45)
+
+Get the admin logs
+Get-AadrmAdminLog -Path $AdminLogs\admin.log
+
+Get the status from the document tracking feature
+Get-AadrmDocumentTrackingFeature
+
+You can use the following commands with the Azure Information Protection cmdlets:
+
+Get-Command -Module AzureInformationProtection
+
+With the following cmdlet you get the actual available RMS templates on a client
+Get-RMSTemplate
+
+You can get the actual state of a file with the following cmdlet
+Get-AIPFileStatus .\Q3_Product_Strategy.docx
+
+Set-AIPFileLabel -LabelId de82bccd-c50f-4162-b113-8aa9e98ed45f -Path .\Testfile.docx
+
+

@@ -1,0 +1,13 @@
+$ThumbnailRules = (Get-ADSyncRule | Where-Object {($_.AttributeFlowMappings.Source -eq "thumbnailPhoto") -and ($_.Direction -eq "Inbound")})
+
+foreach($syncrule in $ThumbnailRules){ 
+ 
+ Write-Host -ForegroundColor Green "Processing Rule $($syncrule.Name)"
+ $mapping = $syncrule.AttributeFlowMappings | Where-Object {$_.Source -eq "thumbnailPhoto"}
+ 
+ Remove-ADSyncAttributeFlowMapping -SynchronizationRule $syncrule -AttributeFlowMappings $mapping -OutVariable rule
+ 
+ Add-ADSyncAttributeFlowMapping -SynchronizationRule $syncrule -Source @('thumbnailPhoto') -Destination 'thumbnailPhoto' -FlowType 'Expression' -Expression 'AuthoritativeNull' -ValueMergeType 'Update' -OutVariable rule
+ Add-ADSyncRule -SynchronizationRule $rule[0]
+}
+

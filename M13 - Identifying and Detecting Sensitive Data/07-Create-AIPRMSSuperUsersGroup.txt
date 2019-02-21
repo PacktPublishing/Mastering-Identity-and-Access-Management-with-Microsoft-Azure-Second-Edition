@@ -1,0 +1,1 @@
+New-ADGroup -Name "AIP RMS Super Users" -SamAccountName "AIP RMS Super Users" -GroupCategory Security -GroupScope Global -DisplayName "AIP RMS Super Users" -Path "OU=Groups,OU=AIP,OU=Managed Service Objects,DC=inovitdemos,DC=ch" -Description "AIP RMS Super Users"

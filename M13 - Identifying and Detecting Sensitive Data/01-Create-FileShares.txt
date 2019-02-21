@@ -1,0 +1,14 @@
+New-Item -ItemType directory -Path 'C:\Shares\Marketing'
+New-Item -ItemType directory -Path 'C:\Shares\Finance'
+New-Item -ItemType directory -Path 'C:\Shares\Production'
+New-Item -ItemType directory -Path 'C:\Shares\Sales'
+New-Item -ItemType directory -Path 'C:\Shares\Executives'
+New-Item -ItemType directory -Path 'C:\Shares\HumanResources'
+New-Item -ItemType directory -Path 'C:\Shares\ResearchDevelopment'
+New-SmbShare -Name Marketing -Path 'C:\Shares\Marketing' -FullAccess Everyone
+New-SmbShare -Name Production -Path 'C:\Shares\Production' -FullAccess Everyone
+New-SmbShare -Name Sales -Path 'C:\Shares\Sales' -FullAccess Everyone
+New-SmbShare -Name HumanResources -Path 'C:\Shares\HumanResources' -FullAccess Everyone
+New-SmbShare -Name ResearchDevelopment -Path 'C:\Shares\ResearchDevelopment' -FullAccess Everyone
+New-SmbShare -Name Finance -Path 'C:\Shares\Finance' -FullAccess Everyone
+New-SmbShare -Name Executives -Path 'C:\Shares\Executives' -FullAccess Everyone

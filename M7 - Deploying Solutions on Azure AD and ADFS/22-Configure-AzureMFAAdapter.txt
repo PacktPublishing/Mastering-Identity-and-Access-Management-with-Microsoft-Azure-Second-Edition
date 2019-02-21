@@ -1,0 +1,5 @@
+# Connect to the MsolService with your global administrator rights
+Connect-MsolService
+
+# Create a new Service Principal Credential the AppPrincipalId is the hardcoded one for Azure MFA
+New-MsolServicePrincipalCredential -AppPrincipalId 981f26a1-7f43-403b-a875-f8b09b8cd720 -Type asymmetric -Usage verify -Value $certBase64

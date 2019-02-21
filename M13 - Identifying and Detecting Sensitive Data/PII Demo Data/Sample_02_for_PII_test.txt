@@ -1,0 +1,83 @@
+Organizations should minimize the use, collection, and retention of PII to what is strictly necessary
+to accomplish their business purpose and mission.
+The likelihood of harm caused by a breach involving PII is greatly reduced if an organization minimizes
+the amount of PII it uses, collects, and stores. For example, an organization should only request PII in a
+new form if the PII is absolutely necessary. Also, an organization should regularly review its holdings of
+previously collected PII to determine whether the PII  like 123-44-5678 is still relevant and necessary for meeting the
+organization‘s business purpose and mission. For example, organizations could have an annual PII
+purging awareness day. 
+
+OMB M-07-168
+specifically requires agencies to:
+? Review current holdings of PII and ensure they are accurate, relevant, timely, and complete
+? Reduce PII holdings to the minimum necessary for proper performance of agency functions
+? Develop a schedule for periodic review of PII holdings
+? Establish a plan to eliminate the unnecessary collection and use of SSNs.
+Organizations should categorize their PII by the PII confidentiality impact level.
+All PII is not created equal. PII should be evaluated to determine its PII confidentiality impact level,
+which is different from the Federal Information Processing Standard (FIPS) Publication 1999
+confidentiality impact level, so that appropriate safeguards can be applied to the PII. The PII
+confidentiality impact level—low, moderate, or high—indicates the potential harm that could result to the
+subject individuals and/or the organization if PII were inappropriately accessed, used, or disclosed. This
+document provides a list of factors an organization should consider when determining the PII
+confidentiality impact level. Each organization should decide which factors it will use for determining
+impact levels and then create and implement the appropriate policy, procedures, and controls. The
+following are examples of factors:
+? Identifiability. Organizations should evaluate how easily PII can be used to identify specific
+individuals. For example, a SSN uniquely and directly identifies an individual, whereas a telephone
+area code identifies a set of people.
+? Quantity of PII. Organizations should consider how many individuals can be identified from the
+PII. Breaches of 25 records and 25 million records may have different impacts. The PII
+confidentiality impact level should only be raised and not lowered based on this factor.
+? Data Field Sensitivity. Organizations should evaluate the sensitivity of each individual PII data
+field. For example, an individual‘s SSN or financial account number is generally more sensitive than
+
+7 Disposal of PII should be conducted in accordance with the retention schedules approved by the National Archives and
+Records Administration (NARA), as well as in accordance with agency litigation holds.
+8 OMB Memorandum 07-16, Safeguarding Against and Responding to the Breach of Personally Identifiable Information,
+http://www.whitehouse.gov/omb/memoranda/fy2007/m07-16.pdf.
+9
+FIPS 199, Standards for Security Categorization of Federal Information and Information Systems,
+http://csrc.nist.gov/publications/fips/fips199/FIPS-PUB-199-final.pdf.
+GUIDE TO PROTECTING THE CONFIDENTIALITY OF PERSONALLY IDENTIFIABLE INFORMATION (PII)
+ES-3
+an individual‘s phone number or ZIP code. Organizations should also evaluate the sensitivity of the
+PII data fields when combined.
+? Context of Use. Organizations should evaluate the context of use—the purpose for which the PII is
+collected, stored, used, processed, disclosed, or disseminated. The context of use may cause the same
+PII data elements to be assigned different PII confidentiality impact levels based on their use. For
+example, suppose that an organization has two lists that contain the same PII data fields (e.g., name,
+address, phone number). The first list is people who subscribe to a general-interest newsletter
+produced by the organization, and the second list is people who work undercover in law enforcement.
+If the confidentiality of the lists is breached, the potential impacts to the affected individuals and to
+the organization are significantly different for each list.
+? Obligations to Protect Confidentiality. An organization that is subject to any obligations to protect
+PII should consider such obligations when determining the PII confidentiality impact level.
+Obligations to protect generally include laws, regulations, or other mandates (e.g., Privacy Act, OMB
+guidance). For example, some Federal agencies, such as the Census Bureau and the Internal Revenue
+Service (IRS), are subject to specific legal obligations to protect certain types of PII.10
+? Access to and Location of PII. Organizations may choose to take into consideration the nature of
+authorized access to and the location of PII. When PII is accessed more often or by more people and
+systems, or the PII is regularly transmitted or transported offsite, then there are more opportunities to
+compromise the confidentiality of the PII.
+Organizations should apply the appropriate safeguards for PII based on the PII confidentiality
+impact level.
+Not all PII should be protected in the same way. Organizations should apply appropriate safeguards to
+protect the confidentiality of PII based on the PII confidentiality impact level. Some PII does not need to
+have its confidentiality protected, such as information that the organization has permission or authority to
+release publicly (e.g., an organization‘s public phone directory). NIST recommends using operational
+safeguards, privacy-specific safeguards, and security controls,
+11 such as:
+? Creating Policies and Procedures. Organizations should develop comprehensive policies and
+procedures for protecting the confidentiality of PII.
+? Conducting Training. Organizations should reduce the possibility that PII will be accessed, used, or
+disclosed inappropriately by requiring that all individuals receive appropriate training before being
+granted access to systems containing PII.
+? De-Identifying PII. Organizations can de-identify records by removing enough PII such that the
+remaining information does not identify an individual and there is no reasonable basis to believe that
+the information can be used to identify an individual. De-identified records can be used when full
+records are not necessary, such as for examinations of correlations and trends.
+? Using Access Enforcement. Organizations can control access to PII through access control policies
+and access enforcement mechanisms (e.g., access control lists).
+? Implementing Access Control for Mobile Devices. Organizations can prohibit or strictly limit
+access to PII from portable and mobile devices, such as laptops, cell phones, and personal digital 

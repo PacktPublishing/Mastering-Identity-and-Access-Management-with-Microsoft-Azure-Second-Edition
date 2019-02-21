@@ -1,0 +1,20 @@
+# Set your preferred PowerShell execution policy
+Set-ExecutionPolicy Unrestricted
+# Provide global administrator rights
+$UserCredential = Get-Credential
+$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+Import-PSSession $Session
+# Set the correct suffix
+set-UnifiedGroup -Identity Sales -PrimarySmtpAddress "sales@inovitdemos.ch"
+set-UnifiedGroup -Identity Marketing -PrimarySmtpAddress "marketing@inovitdemos.ch"
+set-UnifiedGroup -Identity "Strategy Consulting" -PrimarySmtpAddress "strategyconsulting@inovitdemos.ch"
+set-UnifiedGroup -Identity "Project Management" -PrimarySmtpAddress "projectmanagement@inovitdemos.ch"
+set-UnifiedGroup -Identity Operations -PrimarySmtpAddress "operations@inovitdemos.ch"
+set-UnifiedGroup -Identity "Human Resources" -PrimarySmtpAddress "humanresources@inovitdemos.ch"
+set-UnifiedGroup -Identity Executives -PrimarySmtpAddress "executives@inovitdemos.ch"
+set-UnifiedGroup -Identity Engineering -PrimarySmtpAddress "engineering@inovitdemos.ch"
+set-UnifiedGroup -Identity Contractor -PrimarySmtpAddress "contractor@inovitdemos.ch"
+set-UnifiedGroup -Identity "Finance and Accounting" -PrimarySmtpAddress "financeandaccounting@inovitdemos.ch"
+set-UnifiedGroup -Identity "Customer Relationship Management" -PrimarySmtpAddress "customerrelationshipmanagement@inovitdemos.ch"
+set-UnifiedGroup -Identity "Content Management Consulting" -PrimarySmtpAddress "contentmanagementconsulting@inovitdemos.ch"
+set-UnifiedGroup -Identity "Senior Management" -PrimarySmtpAddress "seniormanagement@inovitdemos.ch"

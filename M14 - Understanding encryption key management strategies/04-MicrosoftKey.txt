@@ -1,0 +1,2 @@
+# Next we set the Microsoft-managed key to the "Active" state
+Set-AAdrmKeyProperties -KeyIdentifier "<Your Microsoft-managed Key Identifier>" -Active $true
