@@ -1,0 +1,181 @@
+From: "Lewis  Greg" <greg.lewis@enron.com>
+To: "Puetz  Fred" <fred.puetz@enron.com>, "Sullivan  Michael"
+	<michael.sullivan@enron.com>
+Subject: RE: Adaytum Status 11-20-01
+Thread-Topic: Adaytum Status 11-20-01
+Thread-Index: AQHSSsM7VSm5oI1IhEuevYPZaywPkQ==
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Wed, 11 Jan 2017 04:35:53 +0000
+Message-ID:
+	<BY1PR17MB0069927543D4DB773D4977ED978C0@BY1PR17MB0069.namprd17.prod.outlook.com>
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+Content-Type: text/plain; charset="us-ascii"
+Content-ID: <5231EDCD1F9DEF4BA8AF4AB86D6CD87C@namprd15.prod.outlook.com>
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Sorry I didn't get back to you yesterday.
+=20
+I'm not real certain of the project organization, but I'll give it a try:
+=20
+The Adaytum implementation is a corporate project managed under the Project=
+ Sunrise umbrella.  Joe Darensburg is the lead reporting to Jan Johnson.  B=
+oth of these people are originally from corp accounting.  I believe Jan has=
+ moved back into the corp accounting group and the overall project is now r=
+eporting to Susan Bellinghausen from the ISC.
+=20
+ETS has it's own project which is being led by Tracy Geaccone (ETS Consolid=
+ations, which reports to Rod Hayslett).  I believe this was originally set =
+up to address ETS' specific planning/forecasting needs and to dovetail into=
+ the corp level implementation.  Hoang Vo is an Adaytum consultant working =
+for Tracy.
+=20
+Lee Baker manages planning and forecasting for the Operations Services Grou=
+p, which reports to Elaine Concklin and is part of Morris Brassfield's orga=
+nization.  I believe Elaine has a dotted line to Rod as well.  Lee's team u=
+ses Hoang quite a bit as well.
+=20
+I'll call you in a few minutes and we can discuss further.
+=20
+Greg=20
+=20
+=20
+=20
+=20
+
+-----Original Message-----
+From: Puetz, Fred=20
+Sent: Monday, November 26, 2001 5:41 PM
+To: Lewis, Greg
+Subject: FW: Adaytum Status 11-20-01
+
+
+Cheryl Perchal is going to coordinate a phone conference with you, Teri Gal=
+issini and Hoang Vo sometime this week.
+We have many questions, not just how actuals could feed into Adaytum for cu=
+rrent estimate.
+=20
+You can maybe help me understand how project management is organized for ET=
+S's Adaytum project(s).
+1. I understand Teri G is project lead.  Does she report to Rod Hayslett?  =
+Is anyone from Steve Hotte's area involved?
+2. Is the project being capitalized or 100% expensed?  No one here has anyt=
+hing like SOW, project authorization, capital project coding for timesheets=
+, status reporting, etc.
+=20
+Thanks, Fred
+=20
+-----Original Message-----
+From: Lewis, Greg=20
+Sent: Wednesday, November 21, 2001 2:59 PM
+To: Puetz, Fred
+Subject: RE: Adaytum Status 11-20-01
+
+
+Fred,
+=20
+I'm out of the office today but took a few minutes to check in and keep the=
+ mountain of email from piling too high.  With regard to the actuals item m=
+entioned below, this came to light when my team was doing research on devel=
+oping cost center reporting out of the finacial data warehouse.  Next Wedne=
+sday we have a detailed planning meeting on requirements after which we wil=
+l be asking the ISC (supports sap, adaytum, data warehouse, etc.)  for an e=
+stimate and schedule.  Basically what we are shooting for is plan in the da=
+ta warehouse to support cost center/variance reporting and actuals in Adayt=
+um to support analysis and development of current estimates and forecasts. =
+=20
+=20
+I call you Monday and we can discuss further.  Have a good Thanksgiving.
+Greg =20
+
+-----Original Message-----=20
+From: Puetz, Fred=20
+Sent: Wed 11/21/2001 8:05 AM=20
+To: Behrens, Alan; Mayer, Tony; Peters, Jerry=20
+Cc: Lewis, Greg=20
+Subject: FW: Adaytum Status 11-20-01
+
+
+
+Rita's consultant rate is $150.  Hoang's rate is either $150 or $215.  I do=
+n't like paying for redesign on a product that should handle large cubes.  =
+I plan to talk with Greg Lewis about this issue.
+
+Fred=20
+
+ -----Original Message-----=20
+From:   Reed, Debra =20
+Sent:   Tuesday, November 20, 2001 4:13 PM=20
+To:     Puetz, Fred=20
+Cc:     Boggs, Phil; Perchal, Cheryl; Peters, Jerry=20
+Subject:        Adaytum Status 11-20-01=20
+
+
+I am out of the office tomorrow and wanted to get some communication out on=
+ the Adaytum O&M project.=20
+I haven't had a chance to talk to Phil on this so this is only my opinion o=
+n the project so far.  This will just be a brief rundown. I can expand upon=
+ any of the items at your request.
+
+Planned this week:=20
+Call Hoang Vo on a couple issues.  (See accomplished below)=20
+Decipher what Rita accomplished in the model and what still needs to be com=
+pleted.=20
+Understand the model.=20
+
+Accomplished this week:=20
+Called Hoang Vo on 11-19.  Issues:=20
+1. Can't open large cubes.  Hoang knows this is a problem.  There is a simi=
+lar issue with a Houston application which they need to redesign. =20
+
+2.  Importing to contributor after allocations ran. Hoang is working on a s=
+cript.  He will send to us once he has it finished.  Until then we could do=
+ it manually but Hoang would have to step us though this process taking awa=
+y from his time writing the script. Side note: if we can't get the allocati=
+ons back to contributor, then the users (me right now) can't do much testin=
+g besides inputting.
+
+Documentation.  Phil and I have been going through d-lists and d-cubes tryi=
+ng to determine the purpose of each.  Discovered some d-lists and d-cubes t=
+hat we may not need and documented questions on others.  This written docum=
+entation should assist new users of our application.
+
+Cube Renaming - We have renamed the Merit SBP Model to just Merit Model.  T=
+his is the only bright spot in the week as renaming cubes seems to be a sim=
+ple process with the name change occurring in all the appropriate places fo=
+r links and macros to still work.   =20
+
+
+Outstanding Issues:=20
+Phil and I have come to the conclusion that we need further assistance from=
+ Hoang or another consultant familiar with this application.  We are in nee=
+d of a summary, manager build, and some sort of documented process on how t=
+o run this application.  I am not at all comfortable with the application i=
+n its present state but feel we can make some progress if we had a complete=
+ roadmap of the application and someone to ask questions of.
+
+In a phone conference this afternoon, we were told that getting actuals int=
+o the Adaytum O&M application would not be ready for January 2002 close.  E=
+TS thought that the whole actuals process was being addressed under the Pro=
+ject Sunrise umbrella which is not the case.  Now ETS must champion this ef=
+fort. It is being headed up by Greg Lewis but there is not an estimated com=
+pletion date.
+
+
+
+Deb
+x7831
+Not everything that can be counted counts, & not everything that counts can=
+ be counted.  Albert Einstein=20
+
+
+***********
+EDRM Enron Email Data Set has been produced in EML, PST and NSF format by Z=
+L Technologies, Inc. This Data Set is licensed under a Creative Commons Att=
+ribution 3.0 United States License <http://creativecommons.org/licenses/by/=
+3.0/us/> . To provide attribution, please cite to "ZL Technologies, Inc. (h=
+ttp://www.zlti.com)."
+***********
+ California

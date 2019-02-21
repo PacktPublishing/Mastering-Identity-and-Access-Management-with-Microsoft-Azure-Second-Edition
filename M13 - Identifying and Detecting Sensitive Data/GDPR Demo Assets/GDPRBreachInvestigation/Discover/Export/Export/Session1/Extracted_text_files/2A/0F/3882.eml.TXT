@@ -1,0 +1,15 @@
+From: Chandler  Bob <bob.chandler@enron.com>
+Sent: 2017-01-11T04:37:25.0000000Z
+To: Geaccone  Tracy <tracy.geaccone@enron.com>; Saunders  James <james.saunders@enron.com>
+Subject: MMF Factors
+
+Per your request we have checked the MMF calculation data for NNG/TW/FGT/Trailblazer to Hyperion and/or SAP as appropriate.  Data checks out.
+However, I asked Mary to provide me a copy of the prior year calculation.  It appears that the NNG and TW Fair Value Adjustment companies were included in the calculation this year, but were excluded last year.  A ballpark estimate is that the ETS MMF factor would drop by .1% if the NNG/TW fair value companies were excluded as they were last year.   That would mean a factor of 19.0% rather than 19.1%.
+
+
+Please call me when you want to discuss IMP.  I'm not sure exactly what you're looking for so trying to answer by e-mail probably wouldn't be very productive.
+
+***********
+EDRM Enron Email Data Set has been produced in EML, PST and NSF format by ZL Technologies, Inc. This Data Set is licensed under a Creative Commons Attribution 3.0 United States License <http://creativecommons.org/licenses/by/3.0/us/> . To provide attribution, please cite to "ZL Technologies, Inc. (http://www.zlti.com)."
+***********
+ California

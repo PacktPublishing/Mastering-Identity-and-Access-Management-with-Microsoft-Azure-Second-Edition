@@ -1,0 +1,41 @@
+From: Geaccone
+Sent: 2017-01-11T04:40:03.0000000Z
+To: Botello
+Subject: FW: REQUEST - 2001 Operating Expenses - High Priority
+
+lets discuss
+
+ -----Original Message-----
+From: 	Schwarzbach, Stephen  
+Sent:	Tuesday, October 02, 2001 9:51 AM
+To:	Geaccone, Tracy; Tran, Agatha; Killen, Faith; Lee, Dana; Smith, Stephanie; Davis, Rachel A.; Vargas, Hope; Evans, Stephen; Sparger, Bob; Smith, Jeff E.; Myers, Thomas; Ueckert, Allen W.; Copeland, Erin; Selzer, Howard; Boyd, Mike; Smith, Kirk; Roper, Kerry; Galvan, Michael S.; Wood, Stephen; West, Terry
+Cc:	Lindsey, Mark E.
+Subject:	REQUEST - 2001 Operating Expenses - High Priority
+
+Hello everyone.  I know that most, if not all, of you are busy with quarter close, 2002 Plan, and possibly Board of Directors presentations and that this is not the ideal time to have more added to your plate.  However, in conjunction to with setting the 2002 Plan targets, the Office of the Chairman has asked to see an analysis of 2001 operating expenses by business unit, with some level of detail, and with quick turnaround.
+
+To that end, and to expedite this request in an efficient manner (and hopefuly save you some work), corporate accounting has already prepared a summary of operating expenses by business unit by category for the eight months ended August 31, 2001.  These categories correlate very closely with the most often used accounts in SAP (cost element groups), i.e. salaries, benefits, outside services, etc.  This information ties to your rollup in CS.  Some categories have many accounts mapped to them, and we have provided the mapping employed by corporate for you to follow (column AO).
+
+What we are asking you to do is as follows:
+
+1. Review the attached schedule for the eight months ended 8/31/2001 (first sheet - Expenses-YTD August 2001).  Corporate has highlighted, in yellow, various amounts that warrant some additional explanation.  Please provide an explanation for these highlighted amounts.  You may do so in any format you choose (at the bottom with a footnote, additional schedule, etc.).
+
+2. As you may remember doing earlier this year with the 2001 Plan, please take your total expenses YTD 8/31/01 and categorize them by function.  We have provided a list of the most common functions in this file, but if you need to add functions for clarity, please do so.  Corporate gave thought to using the SAP alternate hierarchies to do this, but concluded that each BU should have input on this as you will know the most appropriate hierarchies to use and any other adjustments to make, if needed.
+
+3. Considering what has been incurred through August and what the remainder of the year holds for your BU, please project your total 2001 operating expenses by both category and by function.  Please fill in the second sheet in the file (Expenses-Sep-Dec 2001) with your projections and review the totals sheet (Total Year Estimate).  
+
+Keep in mind that this exercise is meant to be your best estimate at this time of these items, given the quick turnaround time, and not an exhaustive project. We realize that this is the best estimate at this time and understand that these numbers may change for a variety of reasons.
+
+If you have any questions, please call me at x33341 or Terry West at x36910.
+
+And finally, this needs to be completed and returned to me by 1:00pm this Wednesday, October 3.
+
+Thank you,
+Steve
+
+ 
+
+***********
+EDRM Enron Email Data Set has been produced in EML, PST and NSF format by ZL Technologies, Inc. This Data Set is licensed under a Creative Commons Attribution 3.0 United States License <http://creativecommons.org/licenses/by/3.0/us/> . To provide attribution, please cite to "ZL Technologies, Inc. (http://www.zlti.com)."
+***********
+ California

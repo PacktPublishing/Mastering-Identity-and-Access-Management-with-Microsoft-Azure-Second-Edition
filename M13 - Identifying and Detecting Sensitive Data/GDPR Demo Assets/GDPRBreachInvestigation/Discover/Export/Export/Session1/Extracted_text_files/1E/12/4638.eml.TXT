@@ -1,0 +1,115 @@
+From: Centilli  James <james.centilli@enron.com>
+Sent: 2017-01-11T04:37:02.0000000Z
+To: Geaccone  Tracy <tracy.geaccone@enron.com>
+Subject: RE: LaPlata DRA Application Cost Estimate
+
+Let me know when and where.
+
+ -----Original Message-----
+From: 	Geaccone, Tracy  
+Sent:	Thursday, October 18, 2001 10:24 AM
+To:	Centilli, James
+Subject:	RE: LaPlata DRA Application Cost Estimate
+
+Can we discuss?  Wha about next the first of next week?
+
+ -----Original Message-----
+From: 	Centilli, James  
+Sent:	Wednesday, October 17, 2001 9:04 AM
+To:	Geaccone, Tracy
+Subject:	RE: LaPlata DRA Application Cost Estimate
+
+The project can not be justified, if you have the capital cost of the pigging facilities.  On a stand alone basis without the pigging facilities we can justify the project.
+
+James
+
+ -----Original Message-----
+From: 	Geaccone, Tracy  
+Sent:	Monday, October 15, 2001 3:48 PM
+To:	Centilli, James
+Subject:	FW: LaPlata DRA Application Cost Estimate
+
+Have you had a chance to run this?  If not, when do you think you will?
+
+Thanks
+
+ -----Original Message-----
+From: 	Sturn, John  
+Sent:	Monday, October 15, 2001 2:24 PM
+To:	Geaccone, Tracy
+Subject:	RE: LaPlata DRA Application Cost Estimate
+
+Tracy,
+
+Have you made any progress on the economic analysis?
+
+Thanks,
+
+
+John
+
+---------------------- Forwarded by John Sturn/ET&S/Enron on 10/15/2001 02:22 PM ---------------------------
+From:	John Sturn on 09/17/2001 07:18 AM
+To:	Tracy Geaccone/ENRON@enronXgate
+cc:	Rich Jolly/ET&S/Enron@ENRON, Earl Chanley/ENRON@enronXgate, Ben Asante/ENRON@enronXgate, Gary Choquette/ENRON@enronXgate, Kim Kouri/ENRON@enronXgate 
+
+Subject:	RE: LaPlata DRA Application Cost Estimate   << OLE Object: StdOleLink >> 
+
+Tracy,
+
+10,000 MMBTU/D of incremental capacity from LaPlata to Gallup.
+
+This is the working assumption from our initial conference call.  Like the +/- 30% cost figures below, it may vary with further evaluation, but I suggest it be used for this initial analysis.
+
+Thanks,
+
+
+John
+
+
+
+From:	Tracy Geaccone/ENRON@enronXgate on 09/16/2001 01:25 PM
+To:	John Sturn/ET&S/Enron@ENRON
+cc:	Rich Jolly/ET&S/Enron@ENRON, Earl Chanley/ENRON@enronXgate, Ben Asante/ENRON@enronXgate, Gary Choquette/ENRON@enronXgate, Kim Kouri/ENRON@enronXgate 
+
+Subject:	RE: LaPlata DRA Application Cost Estimate
+
+How much additional capacity/volumes will I get?
+
+ -----Original Message-----
+From: 	Sturn, John  
+Sent:	Friday, September 14, 2001 5:50 PM
+To:	Geaccone, Tracy
+Cc:	Jolly, Rich; Chanley, Earl; Asante, Ben; Choquette, Gary; Kouri, Kim
+Subject:	LaPlata DRA Application Cost Estimate
+
+Tracy,
+
+Below are the rough cost estimates to apply drag reducing agent to the LaPlata to Bloomfield line.
+
+	Facility modifications			$1,665,000
+
+	Cleaning & application			   $165,000
+
+	Re-application every 6 months		   $165,000
+
+
+The facility modifications include a launcher at LaPlata, receiver at Bloomfield and a filter separator at the El Paso Blanco delivery.  The cleaning & application and re-applications costs include cleaning pig runs with methanol and surfactant as well costs for the actual DRA application.
+
+For analyzing sensitivities, all costs are +/- 30%.  The re-application time period is also uncertain.  You may want to look at the economics of re-apply as often as every three months and as infrequently as every 12 months.
+
+Please let me know of anything else you need.
+
+Thanks,
+
+
+John
+
+
+
+
+
+***********
+EDRM Enron Email Data Set has been produced in EML, PST and NSF format by ZL Technologies, Inc. This Data Set is licensed under a Creative Commons Attribution 3.0 United States License <http://creativecommons.org/licenses/by/3.0/us/> . To provide attribution, please cite to "ZL Technologies, Inc. (http://www.zlti.com)."
+***********
+ California

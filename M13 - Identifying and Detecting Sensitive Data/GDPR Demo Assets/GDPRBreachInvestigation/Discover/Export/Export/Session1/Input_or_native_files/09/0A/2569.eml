@@ -1,0 +1,78 @@
+From: "Kleb  Steve" <steve.kleb@enron.com>
+To: "Geaccone  Tracy" <tracy.geaccone@enron.com>
+Subject: FW: Remapping AFUDC
+Thread-Topic: Remapping AFUDC
+Thread-Index: AQHSSsN2WJ/xZyV6wUKRzqoX8ksmNw==
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Wed, 11 Jan 2017 04:37:30 +0000
+Message-ID:
+	<BY1PR17MB00699337B191D81832081D48978C0@BY1PR17MB0069.namprd17.prod.outlook.com>
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+Content-Type: text/plain; charset="us-ascii"
+Content-ID: <FCA7B19DBECFD449B84494A9193F766C@namprd15.prod.outlook.com>
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+FYI - If this request is approved, the reclassification/reporting of AFUDC =
+Equity within Other Income-Other should result in an additional $700K to IB=
+IT for 2001 (NNG $500K, TW $200K).
+
+ -----Original Message-----
+From: 	Joe, Allen =20
+Sent:	Thursday, September 20, 2001 10:43 AM
+To:	Kleb, Steve
+Subject:	FW: Remapping AFUDC
+
+
+fyi
+ -----Original Message-----
+From: 	Joe, Allen =20
+Sent:	Thursday, September 20, 2001 10:40 AM
+To:	Leo, Johnson; Safford, Cynthia
+Cc:	Walters Jr., Harry; Chandler, Bob; McEllin, David; Santellan, Dan; Stud=
+zinski, Betty; Dimacali, Aurora; Schlender, Greg; Miller, Robert; Ivey, Hoy=
+t
+Subject:	Remapping AFUDC
+
+
+Request to remap the below two SAP accounts for AFUDC equity from hyperion =
+account 1755 (Other Deduction-Interest Capitalized)
+to hyperion 1690 (Other Income -Other)               Effective: for SEPTEMB=
+ER 2001 Close.
+
+     SAP Accounts      Description                             From: Curren=
+t Mapping              To: New Mapping
+          59900900     AFUDC Equity Settlement                1755_59900900=
+                     1690_59900900
+          69010000     AFUDC Equity                                 1755_69=
+010000                     1690_69010000
+
+
+=20
+
+
+
+
+AFUDC equity (SAP accounts 59900900-AFUDC equity settlement and 69010000-AF=
+UDC equity) map to Hyperion 1755-interest capitalized.  The only companies =
+using these two SAP accounts as of July and the YTD credit balances in each=
+ of them are companies 141-$531,155, 179-$328,270, 413-$12,681 (debit), 536=
+-$3,066,408, 60-$91,391 and 62-$290,438.
+
+In conclusion I have reviewed the proposed remapping with representatives o=
+f the various ETS companies and they confirmed the remapping would not pres=
+ent any problems to them.
+
+PS.   Pls notify me or Hoyt Ivey when change is made in Corp Hyperion so he=
+ can remap same accounts in EOC hyperion.=20
+
+***********
+EDRM Enron Email Data Set has been produced in EML, PST and NSF format by Z=
+L Technologies, Inc. This Data Set is licensed under a Creative Commons Att=
+ribution 3.0 United States License <http://creativecommons.org/licenses/by/=
+3.0/us/> . To provide attribution, please cite to "ZL Technologies, Inc. (h=
+ttp://www.zlti.com)."
+***********
+ California

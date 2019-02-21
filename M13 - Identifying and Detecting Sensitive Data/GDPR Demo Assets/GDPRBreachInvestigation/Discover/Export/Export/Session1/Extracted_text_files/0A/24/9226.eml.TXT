@@ -1,0 +1,90 @@
+From: Geaccone
+Sent: 2017-01-11T04:38:42.0000000Z
+To: Sap Security <IMCEAEX-_o=enron_ou=na_cn=recipients_cn=mbx+5Fsapsecurity@BN3PR15MB0865.namprd15.prod.outlook.com>
+Subject: RE: P00504745 682504 J Moore
+
+approved
+
+-----Original Message-----
+From: Sap Security 
+Sent: Tuesday, November 13, 2001 12:30 PM
+To: Moore, Jan
+Cc: Geaccone, Tracy
+Subject: P00504745 682504 J Moore 
+
+
+Your SAP Security Request has been received and assigned Remedy case number 682504.   
+Please refer to this case number if you should need to contact the ISC Hotline (x 54727) on this issue 
+
+
+Thank you,
+SAP Security Team
+
+-----Original Message-----
+From: Moore@mailman.enron.com [mailto:Moore@mailman.enron.com]
+Sent: Tuesday, November 13, 2001 10:43 AM
+To: Sap Security
+Subject: P00504745 682504 J Moore 
+
+
+The following request information was recently submitted...
+
+USER INFORMATION:
+
+   SAP ID:                                 P00504745
+   Employee Name (Last,First,MI):          Moore, Jan K
+   Business Unit:                          ETS
+   Company Code:                           0060
+   Cost Center:                            111021
+   Employee Telephone Number:              713-345-3858
+   Employee Email Address:                 jan.moore@enron.com
+   Job Title:                              Sr. Mktg Analyst
+   Business Unit for Roles:                ETS
+
+SUPERVISOR INFORMATION:
+
+   Supervisor SAP ID:                      P00505341
+   Supervisor Name (Last, First, MI):      geaccone, tracy
+   Supervisor Telephone Number:            713-853-7372
+   Supervisor Email:                       tracy.geaccone@enron.com
+
+   Business Reason:                        
+   I prepare the financial forecasts for the TW Commerical
+   group.  I need access to the reports so I can verify
+   O&M actuals against Plan.
+
+VIEWER ROLES:
+   1. Add FN FI Consolidated Viewer
+
+FINANCIAL ACCOUNTING ROLES:
+   No roles in this area were selected.
+
+PROJECT SYSTEM ROLES:
+   No roles in this area were selected.
+
+JOINT VENTURE ROLES:
+   No roles in this area were selected.
+
+MATERIALS MANAGEMENT / PURCHASING ROLES:
+   No roles in this area were selected.
+
+CENTRALIZED ROLES (LIMITED TO SPECIFIC PERSONNEL):
+   No roles in this area were selected.
+
+HUMAN RESOURCES (HR PERSONNEL ONLY):
+   No roles in this area were selected.
+
+HUMAN RESOURCES - TIMEKEEPERS:
+   No roles in this area were selected.
+
+HUMAN RESOURCES - BENEFITS (BENEFITS PERSONNEL ONLY):
+   No roles in this area were selected.
+
+HUMAN RESOURCES - PAYROLL (PAYROLL PERSONNEL ONLY):
+   No roles in this area were selected.
+
+
+***********
+EDRM Enron Email Data Set has been produced in EML, PST and NSF format by ZL Technologies, Inc. This Data Set is licensed under a Creative Commons Attribution 3.0 United States License <http://creativecommons.org/licenses/by/3.0/us/> . To provide attribution, please cite to "ZL Technologies, Inc. (http://www.zlti.com)."
+***********
+ California

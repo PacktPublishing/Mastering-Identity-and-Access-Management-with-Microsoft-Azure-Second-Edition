@@ -1,0 +1,33 @@
+From: Geaccone
+Sent: 2017-01-11T04:39:36.0000000Z
+To: Vo; Fali@adaytum.com
+Subject: RE: ETS resource requirements
+
+okey with me
+
+ -----Original Message-----
+From: 	Vo, Hoang  
+Sent:	Monday, October 15, 2001 2:36 PM
+To:	Geaccone, Tracy
+Cc:	'Fali@adaytum.com'; Baker, Lee
+Subject:	ETS resource requirements
+
+Tracy,
+
+I spoke with Fred and we have a resource available to assists with the remaining ETS modeling and development.  Dymetrix can be here this Wednesday and will be dedicated to ETS through the end of the year.  He will be responsible for the completion of the O&M model for home office.  He will also be responsible for the Marketing initiative.  
+
+I spoke to Ben Humann about Omaha's resource needs.  They will require a resource for two weeks starting November 12th to implement the O&M contributor model.  If they should decide to move forward with development of a full financial system, they will require an additional six weeks of time at a minimum.  We will scope their financial system requirements during the initial two weeks to better determine what the actual recourse requirements will be.
+
+As we discussed this morning I will be dedicated to ETS through the end of January.  I will address the remain issues with Operations.  I address data transfer issues between Adaytum and the Data Warehouse.  I will assist with and manage all of the above initiatives.
+
+Please feel free to contact me if you have and questions or concerns.
+
+Thanks
+Hoang Vo
+
+  
+
+***********
+EDRM Enron Email Data Set has been produced in EML, PST and NSF format by ZL Technologies, Inc. This Data Set is licensed under a Creative Commons Attribution 3.0 United States License <http://creativecommons.org/licenses/by/3.0/us/> . To provide attribution, please cite to "ZL Technologies, Inc. (http://www.zlti.com)."
+***********
+ California

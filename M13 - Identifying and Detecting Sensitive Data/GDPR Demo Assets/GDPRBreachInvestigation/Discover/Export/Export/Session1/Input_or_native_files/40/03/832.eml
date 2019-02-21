@@ -1,0 +1,93 @@
+From: Stephen Schwarzbach
+To: Tracy Geaccone, Terry West
+Subject: REVISED-Capital Charge and Revised Plan Template
+Thread-Topic: REVISED-Capital Charge and Revised Plan Template
+Thread-Index: AQHSSsMqNfm8jeAs0UWeOFb211761Q==
+Date: Wed, 11 Jan 2017 04:35:23 +0000
+Message-ID:
+	<BY1PR17MB0069ECA0E5246C3940BBD22F978C0@BY1PR17MB0069.namprd17.prod.outlook.com>
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+Content-Type: text/plain; charset="us-ascii"
+Content-ID: <39F62B65A02FCA46B16263E3C4A99E38@namprd15.prod.outlook.com>
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+I have made the following changes to the Capital Charge template:
+
+Added Dr/Cr sign clarification to all 3 lines calculating Total Capital
+Changed the Increase/(Decrease) in Cash Required line to reflect the proper=
+ signs - it was backwards in the previous template; in other words, a cash =
+inflow would reduce the cash required
+Under Adjustments, removed third party interest income, as this is included=
+ in IBIT
+In note (C) related to the Net Intercompany Balance, removed lines 0901, 09=
+15, 0936, and 0941, as these are already included in note (A) as part of Hy=
+perion line TOT_SHARE-EQU; removed line 0218 and replaced it with TOT_INV_C=
+ONSUB
+Changed note (D) to clarify that when referring to monthly cash usage (as o=
+pposed to beginning capital balance), lines 0901, 0915, 0936, and 0941 shou=
+ld be included
+Amended note (E) by removing lines 1615, 1679, 1750, 1719, 1710, 1722, 1755=
+, and 1725 and replaced them with TOT_INT_EXP_OTH
+
+Thanks,
+Steve
+
+=20
+
+
+---------------------- Forwarded by Stephen Schwarzbach/Corp/Enron on 02/20=
+/2001 06:07 PM ---------------------------
+
+
+Stephen Schwarzbach
+02/20/2001 02:59 PM
+To:	Tracy Geaccone/GPGFIN/Enron@ENRON, Faith Killen/HOU/ECT@ECT, Nadia A Ro=
+driguez/NA/Enron@ENRON, Niamh O'Regan/LON/ECT@ECT, Stephen Wood/LON/ECT@ECT=
+, Stephen Evans/LON/ECT@ECT, Agatha B Tran/ENRON_DEVELOPMENT@ENRON_DEVELOPM=
+ENT, Jeffrey E Sommers/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Thomas Myers/HO=
+U/ECT, Jeff Smith/HOU/ECT, Kent Castleman/NA/Enron@Enron, Kerry Roper/GPGFI=
+N/Enron@ENRON, Michael S Galvan/HOU/ECT@ECT, Wade Stubblefield/HOU/EES@EES,=
+ Debra Brannen/HOU/EES@EES, Carolyn Barrett/Enron Communications@Enron Comm=
+unications, Howard Selzer/Corp/Enron@ENRON, Pamela Rush/Corp/Enron@ENRON, D=
+ave Gunther/NA/Enron@Enron, James Hollman/Corp/Enron@ENRON, Robert Wilcott/=
+Corp/Enron@ENRON, Karen Choyce/Corp/Enron@ENRON, Linda Armas/Corp/Enron@Enr=
+on, Krysti Knight/HOU/ECT, Clare Kerr/LON/ECT@ECT, Kerrie Smith/Corp/Enron@=
+ENRON
+cc:	Terry West/Corp/Enron@ENRON=20
+
+Subject:	Capital Charge and Revised Plan Templates
+
+Attached are the templates for calculating the Capital Charge and the revis=
+ed format file for resubmission of the Plan.  Within the Capital Charge fil=
+e, I have listed the applicable Hyperion lines for certain line items in th=
+e schedule.  Please let me know if I have missed anything. =20
+
+With regard to the revised format file for Plan, the most notable change in=
+ the format file is that the Financing Costs section has been deleted, as p=
+reviously discussed.  Also, note that any changes that have been made to th=
+e Plan for quarterly IBIT targets should be included in this iteration, but=
+ only if you have previously communicated those changes to me.
+
+Additionally, in previous emails on this subject, we had stated that the Re=
+vised Plan would be due on February 24th. We have noted that this is a Satu=
+rday, so the due date will be Monday, February 26th by  2:00pm.
+
+Let me know if you have any questions.
+
+Thanks,
+Steve
+
+ =20
+
+
+***********
+EDRM Enron Email Data Set has been produced in EML, PST and NSF format by Z=
+L Technologies, Inc. This Data Set is licensed under a Creative Commons Att=
+ribution 3.0 United States License <http://creativecommons.org/licenses/by/=
+3.0/us/> . To provide attribution, please cite to "ZL Technologies, Inc. (h=
+ttp://www.zlti.com)."
+***********
+ California

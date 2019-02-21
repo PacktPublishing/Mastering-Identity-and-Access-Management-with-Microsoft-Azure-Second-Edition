@@ -1,0 +1,19 @@
+From: Darensbourg  Joe <joe.darensbourg@enron.com>
+Sent: 2017-01-11T04:36:38.0000000Z
+To: Adams  Gregory <gregory.adams@enron.com>
+Subject: RE. Adaytum Update
+
+^Below is an update on the Adaytum Consolidated Model:
+
+1) BU Basic Cubes' Training => last week (10/22 - 10/26), two training sessions were held - EEOS and EGAS. Provided in the training sessions were User Documentation, which included screen prints of Manager screens, as well as a word document with additional user instructions and screen shots of the data cubes. Also included were the Adaytum excel add-in reports (both summary and financial statements). Additional training sessions are scheduled for the next two weeks. If you have not done so already, please let me know your availability. The sessions lasts approximately 4 hours, and is done "on-site".
+
+NOTE: Most Enron computers have a minimum of 128K of RAM. In order for faster processing of data and accessing the cubes, we are recommending that everyone upgrade to an additional 128K of RAM (totalling 256K RAM). The cost of this upgrade is a nominal amount (under $25), and is well worth the investment.
+
+To check the amount of memory on your machine, please do the following commands:
+
+Start
+
+***********
+EDRM Enron Email Data Set has been produced in EML, PST and NSF format by ZL Technologies, Inc. This Data Set is licensed under a Creative Commons Attribution 3.0 United States License <http://creativecommons.org/licenses/by/3.0/us/> . To provide attribution, please cite to "ZL Technologies, Inc. (http://www.zlti.com)."
+***********
+ California

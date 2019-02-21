@@ -1,0 +1,30 @@
+From: Derr  Dawn <dawn.derr@enron.com>
+Sent: 2017-01-11T04:35:20.0000000Z
+To: Geaccone  Tracy <tracy.geaccone@enron.com>; West  Terry <terry.west@enron.com>
+Subject: 2002 Benefit Rates and Analyst/Associate Charges
+
+Below is the file containing Flex Dollar amounts and the Benefit Rates to be used in preparing your Business Unit's 2002 Plan.  I have also included the flat rates for the Analyst and Associate Program. 
+
+Beginning in June 2001, the Analyst and Associate Program began billing the flat fees to GL account - 52503000 Allocations Other.  A new GL account - 52502600  Analyst & Associate Allocations will be set up and should be used to plan for next year.  PLEASE NOTE:  If you have any reports, cost element groups or spreadsheets that use a listing of GL accounts, you will need to update them to include the new account.
+
+
+ 
+
+
+Associate		$10,400
+3rd Yr. Analyst		  $7,400
+Analyst			  $6,400
+Tax Analyst		  $2,400
+Summer Analyst	  $3,300
+Summer Associates	  $6,000
+
+Please fee free to call me if you have any questions.
+
+Dawn Derr
+37775
+
+
+***********
+EDRM Enron Email Data Set has been produced in EML, PST and NSF format by ZL Technologies, Inc. This Data Set is licensed under a Creative Commons Attribution 3.0 United States License <http://creativecommons.org/licenses/by/3.0/us/> . To provide attribution, please cite to "ZL Technologies, Inc. (http://www.zlti.com)."
+***********
+ California

@@ -1,0 +1,204 @@
+From: Geaccone
+Sent: 2017-01-11T04:39:33.0000000Z
+To: Sap Security <IMCEAEX-_o=enron_ou=na_cn=recipients_cn=mbx+5Fsapsecurity@BN3PR15MB0865.namprd15.prod.outlook.com>; Bayles
+Subject: RE: P00406292 - 643012 Kim Phan (Eva)
+
+I will approve.  However, I feel there are too many operations people with access to move budget dollars around.  Please review list from Danette Campbell and let me know who I can delete.
+
+Thanks
+
+ -----Original Message-----
+From: 	Sap Security  
+Sent:	Tuesday, October 16, 2001 7:52 AM
+To:	Phan, Kim
+Cc:	Bayles, Timothy; Walters Jr., Harry; Geaccone, Tracy; Concklin, Elaine
+Subject:	FW: P00406292 - 643012 Kim Phan (Eva)
+
+Kim,
+
+As stated on Monday's email (due to your transfer from Wholesale EES to ETS), the following Wholesale EES roles have been removed from you SAP profile:
+
+FN_GL Viewer Enterprise
+FN_GL Journal Entry Accounting Enterprse
+FN_GL Journal Posting Mgt (Enterprise)
+FN AP Data Viewer - EES
+FN AR VIEW - EES
+FN CO VIEWER EES
+DataWarehouse User Role - EES
+FN FI Consolidated Viewer-WHOLESALE EES
+
+However, the following roles have been approved and granted to your SAP profile:
+
+  1. Add FN CO Analyst-ETS
+   2. Add FN CO Internal Order Analyst 
+   3. Add FN CO CCA Planner  
+   4. Add FN CO PCA Planner  
+   5. Add FN CO Master Data Creator BU 
+   6. Add FN FI Consolidated Viewer-ETS
+
+We are pending approval from the following approvers:
+
+Pending Timothy Bayles' Approval:
+   1. Add FN PS Viewer
+   2. Add FN PS Project Controls Engineer
+   3. Add FN PS Project Budget Controller 
+
+Pending Harry Walters' Approval: 
+   3. Add FN EC Consolidation Data Viewer - Legal Consolidation
+
+Pending Tracy Geaccone's Approval:
+   6. Add FN IM Capital Budget Appropriation Requestor  
+
+User's Current Access:
+Std End-User profile for basis and prntg
+FN_GL Viewer Enterprise
+FN_GL Journal Entry Accounting Enterprse
+FN_GL Journal Posting Mgt (Enterprise)
+HR EMployee ESS CATS Enterprise HR
+FN AP Data Viewer - EES
+FN AR VIEW - EES
+FN CO VIEWER EES
+DataWarehouse User Role - EES
+FN FI Consolidated Viewer-WHOLESALE EES
+
+Thank you,
+ISC SAP Security (Eva)
+
+
+ -----Original Message-----
+From: 	Zahn, Gary  
+Sent:	Monday, October 15, 2001 11:18 AM
+To:	Sap Security
+Subject:	RE: P00406292 - 643012 Kim Phan (Eva)
+
+approved.
+
+ -----Original Message-----
+From: 	Sap Security  
+Sent:	Monday, October 15, 2001 7:56 AM
+To:	Zahn, Gary; Bayles, Timothy; Geaccone, Tracy; Walters Jr., Harry
+Cc:	Phan, Kim; Concklin, Elaine
+Subject:	P00406292 - 643012 Kim Phan (Eva)
+
+Kim:  Your remedy ticket number is 643012.  Because you are transferring out of Wholesale EES into ETS, please be advised that your old EES roles (listed below) will be removed on 10/16/01.
+FN_GL Viewer Enterprise
+FN_GL Journal Entry Accounting Enterprse
+FN_GL Journal Posting Mgt (Enterprise)
+FN AP Data Viewer - EES
+FN AR VIEW - EES
+FN CO VIEWER EES
+DataWarehouse User Role - EES
+FN FI Consolidated Viewer-WHOLESALE EES
+
+Kim Phan (Wholesale EES) is requesting access to the below ETS role(s) and its pending your approval.  Please email your response to SAP Security.  If you have any questions, please contact her supervisor.
+
+Pending Gary Zahn's Approval
+   1. Add FN CO Analyst
+   2. Add FN CO Internal Order Analyst 
+   3. Add FN CO CCA Planner  
+   4. Add FN CO PCA Planner  
+   5. Add FN CO Master Data Creator BU 
+   6. Add FN FI Consolidated Viewer-ETS
+
+Pending Timothy Bayles' Approval:
+   1. Add FN PS Viewer
+   2. Add FN PS Project Controls Engineer
+   3. Add FN PS Project Budget Controller 
+
+Pending Harry Walters' Approval: 
+   3. Add FN EC Consolidation Data Viewer - Legal Consolidation
+
+Pending Tracy Geaccone's Approval:
+   6. Add FN IM Capital Budget Appropriation Requestor  
+
+User's Current Access:
+Std End-User profile for basis and prntg
+FN_GL Viewer Enterprise
+FN_GL Journal Entry Accounting Enterprse
+FN_GL Journal Posting Mgt (Enterprise)
+HR EMployee ESS CATS Enterprise HR
+FN AP Data Viewer - EES
+FN AR VIEW - EES
+FN CO VIEWER EES
+DataWarehouse User Role - EES
+FN FI Consolidated Viewer-WHOLESALE EES
+
+Thank you,
+ISC SAP Security (Eva)
+
+-----Original Message-----
+From: Phan@mailman.enron.com [mailto:Phan@mailman.enron.com]
+Sent: Friday, October 12, 2001 4:51 PM
+To: Sap Security
+Subject: SAP Security Request Form
+
+
+The following request information was recently submitted...
+
+REQUESTOR INFORMATION:
+
+   Business Unit:                ETS
+   Cost Center:                  111386
+   Company Code:                 0179
+   Business Unit for Roles:      ETS
+   SAP ID:                       P00406292
+
+GENERAL INFORMATION:
+
+   Supervisor:                   Elaine Concklin
+   Supervisor Telephone Number:  713-853-5521
+   Employee Name (Last,First,M): Phan, Kim
+   Employee Location:            3AC-3318
+   Employee Telephone Number:    713-345-5026
+   Employee Email Address:       kim.phan@enron.com
+   Job Title:                    Sr. Financial Planning Specialist
+   SAP User Type:                Enron Employee
+
+   Business Reason:              
+   Will be joining the ETS Financial Planning group effective
+   10/16/2001 and needs access in order to perform her
+   new duties in SAP.
+
+VIEWER ROLES:
+   1. Add FN CO Viewer
+   2. Add FN PS Viewer
+   3. Add FN EC Consolidation Data Viewer - Legal Consolidation
+
+FINANCIAL ACCOUNTING ROLES:
+   1. Add FN CO Analyst
+   2. Add FN CO Internal Order Analyst 
+   3. Add FN CO CCA Planner  
+   4. Add FN CO PCA Planner  
+   5. Add FN CO Master Data Creator BU  
+   6. Add FN IM Capital Budget Appropriation Requestor  
+
+PROJECT SYSTEM ROLES:
+   1. Add FN PS Project Controls Engineer
+   2. Add FN PS Project Budget Controller 
+
+JOINT VENTURE ROLES:
+   No roles in this area were selected.
+
+MATERIALS MANAGEMENT / PURCHASING ROLES:
+   No roles in this area were selected.
+
+CENTRALIZED ROLES (LIMITED TO SPECIFIC PERSONNEL):
+   No roles in this area were selected.
+
+HUMAN RESOURCES (HR PERSONNEL ONLY):
+   No roles in this area were selected.
+
+HUMAN RESOURCES - TIMEKEEPERS:
+   No roles in this area were selected.
+
+HUMAN RESOURCES - BENEFITS (BENEFITS PERSONNEL ONLY):
+   No roles in this area were selected.
+
+HUMAN RESOURCES - PAYROLL (PAYROLL PERSONNEL ONLY):
+   No roles in this area were selected.
+
+
+***********
+EDRM Enron Email Data Set has been produced in EML, PST and NSF format by ZL Technologies, Inc. This Data Set is licensed under a Creative Commons Attribution 3.0 United States License <http://creativecommons.org/licenses/by/3.0/us/> . To provide attribution, please cite to "ZL Technologies, Inc. (http://www.zlti.com)."
+***********
+ California

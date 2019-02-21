@@ -1,0 +1,46 @@
+From: Kleb  Steve <steve.kleb@enron.com>
+Sent: 2017-01-11T04:37:30.0000000Z
+To: Geaccone  Tracy <tracy.geaccone@enron.com>
+Subject: FW: Remapping AFUDC
+
+FYI - If this request is approved, the reclassification/reporting of AFUDC Equity within Other Income-Other should result in an additional $700K to IBIT for 2001 (NNG $500K, TW $200K).
+
+ -----Original Message-----
+From: 	Joe, Allen  
+Sent:	Thursday, September 20, 2001 10:43 AM
+To:	Kleb, Steve
+Subject:	FW: Remapping AFUDC
+
+
+fyi
+ -----Original Message-----
+From: 	Joe, Allen  
+Sent:	Thursday, September 20, 2001 10:40 AM
+To:	Leo, Johnson; Safford, Cynthia
+Cc:	Walters Jr., Harry; Chandler, Bob; McEllin, David; Santellan, Dan; Studzinski, Betty; Dimacali, Aurora; Schlender, Greg; Miller, Robert; Ivey, Hoyt
+Subject:	Remapping AFUDC
+
+
+Request to remap the below two SAP accounts for AFUDC equity from hyperion account 1755 (Other Deduction-Interest Capitalized)
+to hyperion 1690 (Other Income -Other)               Effective: for SEPTEMBER 2001 Close.
+
+     SAP Accounts      Description                             From: Current Mapping              To: New Mapping
+          59900900     AFUDC Equity Settlement                1755_59900900                     1690_59900900
+          69010000     AFUDC Equity                                 1755_69010000                     1690_69010000
+
+
+ 
+
+
+
+
+AFUDC equity (SAP accounts 59900900-AFUDC equity settlement and 69010000-AFUDC equity) map to Hyperion 1755-interest capitalized.  The only companies using these two SAP accounts as of July and the YTD credit balances in each of them are companies 141-$531,155, 179-$328,270, 413-$12,681 (debit), 536-$3,066,408, 60-$91,391 and 62-$290,438.
+
+In conclusion I have reviewed the proposed remapping with representatives of the various ETS companies and they confirmed the remapping would not present any problems to them.
+
+PS.   Pls notify me or Hoyt Ivey when change is made in Corp Hyperion so he can remap same accounts in EOC hyperion. 
+
+***********
+EDRM Enron Email Data Set has been produced in EML, PST and NSF format by ZL Technologies, Inc. This Data Set is licensed under a Creative Commons Attribution 3.0 United States License <http://creativecommons.org/licenses/by/3.0/us/> . To provide attribution, please cite to "ZL Technologies, Inc. (http://www.zlti.com)."
+***********
+ California

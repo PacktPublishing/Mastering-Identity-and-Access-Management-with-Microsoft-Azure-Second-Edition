@@ -1,0 +1,51 @@
+From: "Jordan  Paul" <paul.jordan@enron.com>
+To: "Allen  Phillip K." <phillip.k.allen@enron.com>
+Subject: You may lose your layouts for CQG....
+Thread-Topic: You may lose your layouts for CQG....
+Thread-Index: AQHSSsP6o6QVRuPTtEm9IGcvghLl3w==
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Wed, 11 Jan 2017 04:41:13 +0000
+Message-ID:
+	<BY1PR17MB00690FF3B418732DCA1A4406978C0@BY1PR17MB0069.namprd17.prod.outlook.com>
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+Content-Type: text/plain; charset="us-ascii"
+Content-ID: <ED60A1C7C0468446A4468F5A092D3F14@namprd15.prod.outlook.com>
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+A new version of CQG has been deployed to all current CQG users.  When you =
+log out and log back in you may not initially see your saved layouts.
+If this occurs, please follow the below instructions to retrieve your layou=
+ts.
+
+If you need assistance please contact the resolution center at x31411 and y=
+our floor support technician will be able to assist.
+
+Thank You.
+
+
+
+Restoring user layouts after upgrades to 275.
+
+once you are logged into CQG=20
+
+goto SYSTEM=20
+goto Auto Backup user setups
+goto Restore from Archive tab
+select most recent date prior to current day...... "its format is yyyymmddn=
+n.zip=20
+hit RESTORE NOW button
+hit OK
+
+
+
+***********
+EDRM Enron Email Data Set has been produced in EML, PST and NSF format by Z=
+L Technologies, Inc. This Data Set is licensed under a Creative Commons Att=
+ribution 3.0 United States License <http://creativecommons.org/licenses/by/=
+3.0/us/> . To provide attribution, please cite to "ZL Technologies, Inc. (h=
+ttp://www.zlti.com)."
+***********
+ California

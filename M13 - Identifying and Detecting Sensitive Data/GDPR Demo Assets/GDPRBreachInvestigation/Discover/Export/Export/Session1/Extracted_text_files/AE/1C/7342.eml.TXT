@@ -1,0 +1,39 @@
+From: Botello
+Sent: 2017-01-11T04:38:14.0000000Z
+To: Geaccone
+Subject: FW: Gross / Net Specs - 07/27/01
+
+FYI!
+
+ -----Original Message-----
+From: 	Kumar, Karpagavalli Usha  
+Sent:	Friday, July 27, 2001 3:00 PM
+To:	Gunn, Cephus; Prendergast, Pat; Botello, Mary; Apodaca, Vera; Fox, Paul; Griffiths, David; Hsieh, Sally; Patel, Sophie; Prigmore, Patty; Smilenova, Rositza; Truong, Louie; Villasenor, Amy ; Sewell, Braden; Chan, Li N.; Keiser, John; Cohen, Robert; Lewis, Greg; Nightingale, Ron
+Cc:	Chulki, Shyam; Kulkarni, Sachin
+Subject:	Gross / Net Specs - 07/27/01 
+
+Hi All,
+
+Here's the updated spec document file dated 072701. All the changes discussed in the last meeting have been incorporated. 
+
+ 
+
+As mentioned earlier we will start working the Top section - Payroll (Salary & wages, benefits, and taxes) on 8/1/01.
+As regards the report specifications for the remaining non-payroll section of the report further review and modifications will be forthcoming based on design analysis to be done by Braden and myself.
+
+
+Please review the specs with respect to all the sections, cost elements & formulas indicated and let us have your observations.
+
+If you have any questions please let me know.
+
+Regards,
+
+Usha Kumar
+ISC Report Development
+Ph : 713-345-6190
+Page : 877-852-2193
+
+***********
+EDRM Enron Email Data Set has been produced in EML, PST and NSF format by ZL Technologies, Inc. This Data Set is licensed under a Creative Commons Attribution 3.0 United States License <http://creativecommons.org/licenses/by/3.0/us/> . To provide attribution, please cite to "ZL Technologies, Inc. (http://www.zlti.com)."
+***********
+ California

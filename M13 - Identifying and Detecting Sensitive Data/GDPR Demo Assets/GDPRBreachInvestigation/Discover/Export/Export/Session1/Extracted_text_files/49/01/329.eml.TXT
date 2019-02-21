@@ -1,0 +1,68 @@
+From: Hayslett  Rod <rod.hayslett@enron.com>
+Sent: 2017-01-11T04:35:37.0000000Z
+To: Geaccone  Tracy <tracy.geaccone@enron.com>
+Subject: FW: Deal Summary with ECOutlook
+
+FYI
+
+ -----Original Message-----
+From: 	Hotte, Steve  
+Sent:	Wednesday, February 28, 2001 4:07 PM
+To:	White, Julia; Hayslett, Rod; Jaquet, Tammy; Nacey, Sheila
+Cc:	Barnes, Caroline; Behrens, Alan; Brady, Andy; Ferguson, Mark; Gigliotti, Mark; Herron, D J; Houser, Rita; Joanne Bisbee; Kedwaii, Hasan; Kenagy, Gary; Koh, Wendy; Lewis, Greg; Licciardo, Jeanne; Martinez, Bob; Mayer, Tony; Puetz, Fred; Rahn, Nick; Rich, Sue; Sawyer, Lisa; Smith, Chris A.; Strader, Kelly; Sullivan, Michael; Tombaugh, Elaine; Zhou, Joe
+Subject:	FW: Deal Summary with ECOutlook
+Sensitivity:	Confidential
+
+fyi.
+
+ -----Original Message-----
+From: 	Yanowski, Tommy J.  
+Sent:	Tuesday, February 20, 2001 9:27 AM
+To:	Perlman, Beth; Hotte, Steve; Rub, Jenny; McAuliffe, Bob; Gros, Thomas D.; Burchfield, Richard; Johnson, Jeff; Stock, Stephen; Hanz, Chris; Bruce, Dan; Webb, Jay; Pavetto, John; Piper, Greg
+Cc:	Bibi, Philippe A.; Ripley, Brian
+Subject:	Deal Summary with ECOutlook
+
+Sale of Enron's EDI IP to ECOutlook
+Last week Enron sold to ECOutlook it's intellectual property related to it's current EDI Hub for $3,000,000 and a 5 year warrant to purchase 500,000 shares of ECOutlook stock at $2.25 per share.  Enron through a separate investment in ECOutlook in 2000 currently owns 6% of the company.  Once Enron executes the warrant we would own a total of 7% of the company.  ECOutlook's current customer list includes Bausch & Lomb, Bristol-Meyers, Ciba-Vision, BASF, Dupont, Equistar/Lyondell, Perseco(McDonalds), Sun Microsystems, SYSCO, Pentacon and others.  
+
+Enron's EDI Hub currently processes the following types of transactions:
+
+Products     Internal C/P's	External	    Documents
+Gas	5	69	Nominations	Schedule Quantities	
+			Quick Response	Capacity	
+				Meter Statements	
+				Imbalance	
+					
+					
+Electric	4	20	Enrollments	Meter Info	
+			Terminations	Usage	
+			Switch Notice	Payments	
+			Rate Confirmation		
+			Invoices		
+			Billing		
+			Purchase Order		
+					
+Financial	8	20	Checks	Acknowledgements	
+			Direct Deposits	Utility Invoices	
+			Advices	Consolidated Billing	
+			Issuances		
+			Financial Report		
+			Wire Transfers		
+The existing IP related to these types of transactions is now owned by ECPower and they will have the right to market it to other customers.  
+
+Enron has also entered into a five-year O&M agreement and will transition the operations of it's EDI Hub from ECPower to ECOutlook over the next six-months.  The O&M rates are flat to our deal with ECPower.  
+
+Enron also paid $100,000 to purchase a license to ECOutlook's B2B connectivity software called SDI Server.  We are looking at ways to use this software to assist data transformation efforts between EIM, EGM and their trading partners. 
+
+Attached are the Asset Purchase, EDI O&M and EDI License Agreements for your review.  Please let me know if you have any questions.  -  Tommy
+
+    
+
+ 
+
+  
+
+***********
+EDRM Enron Email Data Set has been produced in EML, PST and NSF format by ZL Technologies, Inc. This Data Set is licensed under a Creative Commons Attribution 3.0 United States License <http://creativecommons.org/licenses/by/3.0/us/> . To provide attribution, please cite to "ZL Technologies, Inc. (http://www.zlti.com)."
+***********
+ California

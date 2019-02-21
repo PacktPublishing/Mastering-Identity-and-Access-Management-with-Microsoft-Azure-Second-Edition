@@ -1,0 +1,32 @@
+From: Adam Johnson
+Sent: 2017-01-11T04:46:01.0000000Z
+To: Phillip K Allen
+Subject: EOL Average Deal Count by Trader and Product as of 5-16-01
+
+The following file contains a graphical view of the North American Gas 
+average deal count by Trader and Product for EOL. This information is for 
+comparative analysis only.  Do not update links when opening this file.
+
+
+
+If you have any questions regarding this breakout, please let me know .
+
+Thanks,
+Adam Johnson
+x54877
+EnronOnline
+
+
+
+
+
+
+
+
+
+
+
+***********
+EDRM Enron Email Data Set has been produced in EML, PST and NSF format by ZL Technologies, Inc. This Data Set is licensed under a Creative Commons Attribution 3.0 United States License <http://creativecommons.org/licenses/by/3.0/us/> . To provide attribution, please cite to "ZL Technologies, Inc. (http://www.zlti.com)."
+***********
+ California
