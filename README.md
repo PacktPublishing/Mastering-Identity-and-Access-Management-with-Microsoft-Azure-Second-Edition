@@ -42,9 +42,9 @@ This book is a perfect companion for developers, cyber security specialists, sys
 
 With the following software and hardware list you can run all code files present in the book (Chapter 1-16).
 ### Software and Hardware List
-| Chapter | Software required | OS required |
-| -------- | ------------------------------------ | ----------------------------------- |
-| 1-5,7-10,13-16 | SQL Server, SharePoint Server, Visual Studio, Visual Studio Code, Azure Trail, Microsoft 365 E5 Trial |  |
+| Chapter | Software required |
+| -------- | ------------------------------------ |
+| 1-5,7-10,13-16 | SQL Server, SharePoint Server, Visual Studio, Visual Studio Code, Azure Trail, Microsoft 365 E5 Trial |
 
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://www.packtpub.com/sites/default/files/downloads/9781789132304_ColorImages.pdf?).
@@ -53,10 +53,6 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 * Hands-On Azure for Developers [[Packt]](https://www.packtpub.com/virtualization-and-cloud/hands-azure-developers?utm_source=github&utm_medium=repository&utm_campaign=9781789340624 ) [[Amazon]](https://www.amazon.com/dp/1789340624)
 
 * Implementing Azure Solutions - Second Edition [[Packt]](https://www.packtpub.com/virtualization-and-cloud/implementing-azure-solutions-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781789343045 ) [[Amazon]](https://www.amazon.com/dp/1789343046)
-
-*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/)
-
-*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/)
 
 ## Get to Know the Author
 **Jochen Nickel**
